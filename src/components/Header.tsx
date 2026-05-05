@@ -42,15 +42,29 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-18">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 flex-shrink-0">
-            <div className="w-9 h-9 bg-brand-navy rounded-xl flex items-center justify-center">
-              <span className="text-white text-lg font-black leading-none">M</span>
-            </div>
-            <div className="hidden sm:block">
-              <div className="text-brand-navy font-black text-sm tracking-tight leading-tight">
-                MEDSWIFT
+            {/* Brand image logo — shown when image exists */}
+            <img
+              src="/medswift-brand.jpg"
+              alt="MedSwift Courier"
+              className="h-10 w-auto object-contain hidden sm:block"
+              onError={(e) => {
+                (e.currentTarget as HTMLImageElement).style.display = "none";
+                const fallback = e.currentTarget.nextElementSibling as HTMLElement;
+                if (fallback) fallback.style.display = "flex";
+              }}
+            />
+            {/* Fallback text logo */}
+            <div className="items-center gap-2 sm:hidden" style={{ display: "flex" }}>
+              <div className="w-9 h-9 bg-brand-navy rounded-xl flex items-center justify-center">
+                <span className="text-white text-lg font-black leading-none">M</span>
               </div>
-              <div className="text-brand-blue font-semibold text-[10px] tracking-[0.15em] uppercase leading-tight">
-                EXPRESS
+              <div>
+                <div className="text-brand-navy font-black text-sm tracking-tight leading-tight">
+                  MED<span className="text-brand-red">SWIFT</span>
+                </div>
+                <div className="text-brand-blue font-semibold text-[10px] tracking-[0.15em] uppercase leading-tight">
+                  COURIER
+                </div>
               </div>
             </div>
           </Link>

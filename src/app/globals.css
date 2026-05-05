@@ -31,8 +31,17 @@
     @apply inline-flex items-center gap-2 bg-transparent text-white font-semibold px-6 py-3 rounded-lg
            border-2 border-white hover:bg-white hover:text-brand-navy transition-all duration-200;
   }
+  .btn-red {
+    @apply inline-flex items-center gap-2 bg-brand-red text-white font-semibold px-6 py-3 rounded-lg
+           hover:bg-brand-redmid transition-all duration-200 shadow-sm hover:shadow-md focus:outline-none
+           focus:ring-2 focus:ring-brand-red focus:ring-offset-2;
+  }
   .section-badge {
     @apply inline-block bg-brand-light text-brand-blue text-xs font-semibold uppercase tracking-widest
+           px-4 py-1.5 rounded-full mb-4;
+  }
+  .section-badge-red {
+    @apply inline-block bg-brand-redlt text-brand-red text-xs font-semibold uppercase tracking-widest
            px-4 py-1.5 rounded-full mb-4;
   }
   .section-title {

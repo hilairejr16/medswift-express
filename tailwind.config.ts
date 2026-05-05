@@ -15,6 +15,9 @@ const config: Config = {
           light:   "#EFF6FF",
           green:   "#16A34A",
           greenlt: "#DCFCE7",
+          red:     "#CC1F35",
+          redlt:   "#FEF2F2",
+          redmid:  "#9B1827",
         },
       },
       fontFamily: {
