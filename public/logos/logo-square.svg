@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="MEDSWIFT EXPRESS Square Logo">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swooshGradSq" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B1827;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background square with rounded corners -->
+  <rect width="500" height="500" rx="60" fill="url(#bgGrad)" />
+
+  <!-- Shield shape centered -->
+  <g transform="translate(140, 40)">
+    <path d="M110,12 L198,44 L198,140 C198,195 155,238 110,258 C65,238 22,195 22,140 L22,44 Z" fill="white" opacity="0.12"/>
+    <path d="M110,18 L192,48 L192,138 C192,190 152,231 110,250 C68,231 28,190 28,138 L28,48 Z" fill="white" opacity="0.10"/>
+    <!-- Red swoosh in shield -->
+    <path d="M28,120 L192,90 L192,108 L28,140 Z" fill="url(#swooshGradSq)" opacity="0.95"/>
+    <!-- White M -->
+    <text x="110" y="185" font-family="Arial Black, Arial, sans-serif" font-size="90" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-4">M</text>
+  </g>
+
+  <!-- MEDSWIFT text -->
+  <text x="250" y="355" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-2">
+    <tspan fill="white">MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  </text>
+
+  <!-- EXPRESS -->
+  <text x="250" y="393" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle" letter-spacing="10" opacity="0.9">EXPRESS</text>
+
+  <!-- Red underline -->
+  <rect x="180" y="400" width="140" height="3" fill="#CC1F35" rx="1.5"/>
+
+  <!-- Tagline -->
+  <text x="250" y="435" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle" letter-spacing="2" opacity="0.7">ATLANTA, GA</text>
+</svg>

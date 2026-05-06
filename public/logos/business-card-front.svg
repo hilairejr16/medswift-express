@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 600" width="1050" height="600" role="img" aria-label="MEDSWIFT EXPRESS Business Card Front">
+  <!--
+    Print Specs: 3.5" x 2" @ 300 DPI = 1050 x 600 px
+    Bleed: 0.125" per side. Safe zone: inside 75px from each edge.
+    Colors: #1B3C6E (Navy), #CC1F35 (Red), #2563EB (Blue)
+  -->
+  <defs>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E" />
+      <stop offset="100%" style="stop-color:#1e4a85" />
+    </linearGradient>
+    <linearGradient id="cardSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35" />
+      <stop offset="100%" style="stop-color:#9B1827" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1050" height="600" fill="url(#cardBg)" rx="18"/>
+
+  <!-- Red accent bar top -->
+  <rect x="0" y="0" width="1050" height="12" fill="url(#cardSwoosh)" rx="0"/>
+  <rect x="0" y="0" width="1050" height="12" rx="18" fill="url(#cardSwoosh)"/>
+
+  <!-- Red accent bar bottom -->
+  <rect x="0" y="588" width="1050" height="12" fill="url(#cardSwoosh)" rx="0"/>
+
+  <!-- Decorative diagonal stripe (subtle) -->
+  <path d="M0,420 L320,600 L0,600 Z" fill="white" opacity="0.04"/>
+  <path d="M750,0 L1050,0 L1050,280 Z" fill="white" opacity="0.04"/>
+
+  <!-- Shield Icon (left side) -->
+  <g transform="translate(70, 140)">
+    <path d="M72,8 L128,28 L128,88 C128,120 104,145 72,158 C40,145 16,120 16,88 L16,28 Z" fill="white" opacity="0.12"/>
+    <path d="M72,8 L128,28 L128,88 C128,120 104,145 72,158 C40,145 16,120 16,88 L16,28 Z" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
+    <!-- Swoosh in shield -->
+    <path d="M16,76 L128,56 L128,70 L16,91 Z" fill="url(#cardSwoosh)" opacity="0.95"/>
+    <!-- M lettermark -->
+    <text x="72" y="120" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="white" text-anchor="middle">M</text>
+  </g>
+
+  <!-- MEDSWIFT EXPRESS wordmark -->
+  <text x="270" y="230" font-family="Arial Black, Arial, sans-serif" font-size="68" font-weight="900" fill="white" letter-spacing="-2">
+    <tspan fill="white">MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  </text>
+  <text x="272" y="272" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="10" opacity="0.9">EXPRESS</text>
+  <rect x="272" y="280" width="80" height="3" fill="#CC1F35" rx="1.5"/>
+
+  <!-- Tagline -->
+  <text x="272" y="320" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" opacity="0.65" letter-spacing="2">MEDICAL COURIER · ATLANTA, GA</text>
+
+  <!-- Divider -->
+  <line x1="70" y1="395" x2="980" y2="395" stroke="white" stroke-width="1" opacity="0.15"/>
+
+  <!-- Name line (placeholder — editable) -->
+  <text x="70" y="440" font-family="Arial Black, Arial, sans-serif" font-size="24" font-weight="900" fill="white" letter-spacing="0.5">Natasha Mutakura</text>
+  <text x="70" y="466" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#FF4D65" font-weight="600" letter-spacing="1">OWNER · MEDSWIFT EXPRESS</text>
+
+  <!-- Contact info (right side) -->
+  <text x="980" y="440" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" opacity="0.85" text-anchor="end">📞 (757) 940-8468</text>
+  <text x="980" y="465" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" opacity="0.85" text-anchor="end">🌐 medswiftexpress.com</text>
+  <text x="980" y="490" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="white" opacity="0.65" text-anchor="end">Atlanta, GA Metro Area</text>
+
+  <!-- Bottom micro tagline -->
+  <text x="525" y="565" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" opacity="0.4" text-anchor="middle" letter-spacing="3">RELIABLE · PROFESSIONAL · DISCREET</text>
+</svg>

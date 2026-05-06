@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 130" width="560" height="130" role="img" aria-label="MEDSWIFT EXPRESS Logo">
+  <defs>
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="swooshGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9B1827;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Badge / Shield Icon -->
+  <g transform="translate(8, 8)">
+    <!-- Shield base -->
+    <path d="M57,6 L99,22 L99,62 C99,85 79,105 57,114 C35,105 15,85 15,62 L15,22 Z" fill="url(#badgeGrad)" />
+    <!-- Red swoosh stripe -->
+    <path d="M15,54 L99,38 L99,50 L15,66 Z" fill="url(#swooshGrad)" opacity="0.9"/>
+    <!-- White M lettermark -->
+    <text x="57" y="80" font-family="Arial Black, Arial, sans-serif" font-size="38" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-2">M</text>
+    <!-- Small accent dots -->
+    <circle cx="33" cy="98" r="3" fill="#CC1F35" opacity="0.7"/>
+    <circle cx="81" cy="98" r="3" fill="#CC1F35" opacity="0.7"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(130, 0)">
+    <!-- MED -->
+    <text x="0" y="72" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="#1B3C6E" letter-spacing="-1">MED</text>
+    <!-- SWIFT -->
+    <text x="112" y="72" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="#CC1F35" letter-spacing="-1">SWIFT</text>
+    <!-- EXPRESS subtitle -->
+    <text x="1" y="96" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#1B3C6E" letter-spacing="8">EXPRESS</text>
+    <!-- Tagline -->
+    <text x="1" y="116" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="400" fill="#64748B" letter-spacing="2">ATLANTA, GA · MEDICAL COURIER</text>
+    <!-- Red accent line under EXPRESS -->
+    <rect x="1" y="100" width="60" height="2" fill="#CC1F35" rx="1"/>
+  </g>
+</svg>

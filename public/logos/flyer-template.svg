@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 1100" width="850" height="1100" role="img" aria-label="MEDSWIFT EXPRESS Flyer Template">
+  <!--
+    Print Specs: 8.5" x 11" letter @ 100 DPI = 850 x 1100 px
+    For 300 DPI print: scale up 3x in your print software
+    Colors: #1B3C6E Navy | #CC1F35 Red | #2563EB Blue
+  -->
+  <defs>
+    <linearGradient id="flyerHdr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E" />
+      <stop offset="100%" style="stop-color:#1e4a85" />
+    </linearGradient>
+    <linearGradient id="flyerRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35" />
+      <stop offset="100%" style="stop-color:#9B1827" />
+    </linearGradient>
+    <linearGradient id="flyerCTA" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#CC1F35" />
+      <stop offset="100%" style="stop-color:#9B1827" />
+    </linearGradient>
+  </defs>
+
+  <!-- White base -->
+  <rect width="850" height="1100" fill="white"/>
+
+  <!-- ===== HEADER (navy) ===== -->
+  <rect x="0" y="0" width="850" height="280" fill="url(#flyerHdr)"/>
+
+  <!-- Decorative diagonal in header -->
+  <path d="M0,200 L250,280 L0,280 Z" fill="white" opacity="0.05"/>
+  <path d="M600,0 L850,0 L850,200 Z" fill="white" opacity="0.05"/>
+
+  <!-- Red accent bar in header -->
+  <rect x="0" y="250" width="850" height="8" fill="url(#flyerRed)"/>
+
+  <!-- Shield icon in header -->
+  <g transform="translate(60, 55)">
+    <path d="M72,6 L128,26 L128,84 C128,116 104,140 72,152 C40,140 16,116 16,84 L16,26 Z" fill="white" opacity="0.15"/>
+    <path d="M72,6 L128,26 L128,84 C128,116 104,140 72,152 C40,140 16,116 16,84 L16,26 Z" fill="none" stroke="white" stroke-width="2" opacity="0.4"/>
+    <path d="M16,72 L128,52 L128,65 L16,87 Z" fill="url(#flyerRed)" opacity="0.95"/>
+    <text x="72" y="116" font-family="Arial Black, Arial, sans-serif" font-size="50" font-weight="900" fill="white" text-anchor="middle">M</text>
+  </g>
+
+  <!-- Wordmark in header -->
+  <text x="230" y="132" font-family="Arial Black, Arial, sans-serif" font-size="72" font-weight="900" fill="white" letter-spacing="-2">
+    <tspan>MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  </text>
+  <text x="232" y="166" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="white" letter-spacing="10">EXPRESS</text>
+  <rect x="232" y="174" width="80" height="3" fill="#CC1F35" rx="1.5"/>
+  <text x="232" y="200" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" opacity="0.65" letter-spacing="2">MEDICAL COURIER · ATLANTA, GA</text>
+
+  <!-- Header tagline -->
+  <text x="425" y="240" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="white" text-anchor="middle" letter-spacing="1">FAST. RELIABLE. PROFESSIONAL.</text>
+
+  <!-- ===== HEADLINE ===== -->
+  <text x="425" y="340" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="#1B3C6E" text-anchor="middle" letter-spacing="-1">Prescription Delivery</text>
+  <text x="425" y="388" font-family="Arial Black, Arial, sans-serif" font-size="40" font-weight="900" fill="#CC1F35" text-anchor="middle" letter-spacing="-1">You Can Count On</text>
+  <!-- Accent underline -->
+  <rect x="295" y="400" width="260" height="4" fill="url(#flyerRed)" rx="2"/>
+
+  <!-- Sub-headline -->
+  <text x="425" y="440" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#475569" text-anchor="middle" letter-spacing="0.5">Serving pharmacies, clinics, and patients across the Atlanta metro area.</text>
+
+  <!-- ===== SERVICES LIST ===== -->
+  <rect x="50" y="470" width="750" height="260" fill="#F8FAFC" rx="16"/>
+  <rect x="50" y="470" width="8" height="260" fill="url(#flyerRed)" rx="4"/>
+
+  <text x="90" y="512" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" fill="#1B3C6E" letter-spacing="0.5">OUR SERVICES</text>
+  <rect x="90" y="518" width="50" height="2.5" fill="#CC1F35" rx="1.5"/>
+
+  <!-- Service items -->
+  <g font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#334155">
+    <text x="90" y="558">✅  Same-Day &amp; Rush Prescription Delivery</text>
+    <text x="90" y="590">✅  Scheduled Recurring Routes for Pharmacies</text>
+    <text x="90" y="622">✅  Temperature-Sensitive Medication Handling</text>
+    <text x="90" y="654">✅  Home Delivery to Patients &amp; Care Facilities</text>
+    <text x="90" y="686">✅  HIPAA-Aware · Licensed &amp; Insured</text>
+    <text x="90" y="718">✅  Medical Supplies &amp; Specimen Transport</text>
+  </g>
+
+  <!-- ===== WHY CHOOSE US strip ===== -->
+  <rect x="0" y="750" width="850" height="6" fill="#EFF6FF"/>
+
+  <!-- Three stat boxes -->
+  <rect x="50" y="768" width="220" height="100" fill="#EFF6FF" rx="12"/>
+  <text x="160" y="818" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#CC1F35" text-anchor="middle">24/7</text>
+  <text x="160" y="848" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#475569" text-anchor="middle">Dispatch Available</text>
+
+  <rect x="315" y="768" width="220" height="100" fill="#EFF6FF" rx="12"/>
+  <text x="425" y="818" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#1B3C6E" text-anchor="middle">100%</text>
+  <text x="425" y="848" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#475569" text-anchor="middle">Delivery Confirmation</text>
+
+  <rect x="580" y="768" width="220" height="100" fill="#EFF6FF" rx="12"/>
+  <text x="690" y="818" font-family="Arial Black, Arial, sans-serif" font-size="34" font-weight="900" fill="#CC1F35" text-anchor="middle">ATL</text>
+  <text x="690" y="848" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#475569" text-anchor="middle">Metro Coverage</text>
+
+  <!-- ===== TESTIMONIAL / TRUST quote ===== -->
+  <rect x="50" y="890" width="750" height="80" fill="white" rx="12" stroke="#E2E8F0" stroke-width="1.5"/>
+  <text x="425" y="928" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="#475569" text-anchor="middle" font-style="italic">"Dependable, discreet, and professional — exactly what our pharmacy needed."</text>
+  <text x="425" y="956" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#94A3B8" text-anchor="middle">— Atlanta Pharmacy Partner</text>
+
+  <!-- ===== CTA FOOTER ===== -->
+  <rect x="0" y="995" width="850" height="105" fill="url(#flyerCTA)"/>
+
+  <text x="425" y="1038" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">Ready to Get Started?</text>
+
+  <!-- Contact info in footer -->
+  <text x="190" y="1072" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" text-anchor="middle" font-weight="700">📞 (757) 940-8468</text>
+  <line x1="340" y1="1055" x2="340" y2="1085" stroke="white" stroke-width="1" opacity="0.4"/>
+  <text x="425" y="1072" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" text-anchor="middle" font-weight="700">🌐 medswiftexpress.com</text>
+  <line x1="520" y1="1055" x2="520" y2="1085" stroke="white" stroke-width="1" opacity="0.4"/>
+  <text x="660" y="1072" font-family="Arial, Helvetica, sans-serif" font-size="15" fill="white" text-anchor="middle" font-weight="700">📍 Atlanta, GA</text>
+</svg>

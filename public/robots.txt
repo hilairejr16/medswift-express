@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Disallow any internal/utility paths (none currently, but future-proof)
+Disallow: /api/
+Disallow: /_next/
+
+# Sitemap location
+Sitemap: https://medswiftexpress.com/sitemap.xml
+
+# Crawl-delay for well-behaved bots (optional, most major bots ignore this)
+Crawl-delay: 10
