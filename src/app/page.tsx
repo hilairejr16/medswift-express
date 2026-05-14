@@ -65,41 +65,32 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Medical supply illustration + brand image stacked */}
-            <div className="hidden lg:flex flex-col gap-5 justify-center items-center">
+            {/* Right — Logo + Van illustration */}
+            <div className="hidden lg:flex flex-col gap-6 justify-center items-center">
 
-              {/* Medical supply delivery illustration */}
-              <div className="relative w-full">
-                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl scale-110" />
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-3 border border-white/20 shadow-2xl">
-                  <img
-                    src="/medical-delivery-illustration.svg"
-                    alt="MEDSWIFT EXPRESS — Medical supply delivery with company logo"
-                    className="rounded-2xl w-full max-w-md"
-                  />
-                </div>
-                {/* Floating red badge */}
-                <div className="absolute -bottom-4 -right-4 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full animate-pulse inline-block" />
-                  HIPAA-Aware Delivery
-                </div>
+              {/* Logo (white version — designed for dark backgrounds) */}
+              <div className="w-full flex justify-center">
+                <img
+                  src="/logos/logo-white.svg"
+                  alt="MEDSWIFT EXPRESS logo"
+                  className="w-full max-w-sm drop-shadow-2xl"
+                />
               </div>
 
-              {/* Brand image strip below */}
-              <div className="relative w-full mt-2">
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-2 border border-white/20 shadow-xl overflow-hidden">
+              {/* Van illustration */}
+              <div className="relative w-full">
+                <div className="absolute inset-0 bg-white/5 rounded-3xl blur-2xl scale-110" />
+                <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-4 border border-white/20 shadow-2xl">
                   <img
-                    src="/medswift-brand.jpg"
-                    alt="MedSwift Courier — branded van and driver"
-                    className="rounded-xl w-full object-cover"
-                    style={{ maxHeight: "120px", objectPosition: "center 40%" }}
+                    src="/logos/van-illustration.svg"
+                    alt="MEDSWIFT EXPRESS delivery van on the road in Atlanta"
+                    className="w-full max-w-md rounded-xl"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-brand-navy/60 to-transparent rounded-xl flex items-center px-4">
-                    <div>
-                      <p className="text-white font-black text-sm">On the road in Atlanta</p>
-                      <p className="text-blue-200 text-xs">📍 Metro-wide coverage</p>
-                    </div>
-                  </div>
+                </div>
+                {/* Floating badge */}
+                <div className="absolute -bottom-4 -left-2 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">
+                  <span className="w-2 h-2 bg-white rounded-full animate-pulse inline-block" />
+                  On the road in Atlanta
                 </div>
               </div>
 
