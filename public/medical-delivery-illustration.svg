@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 560" width="520" height="560" role="img" aria-label="MEDSWIFT EXPRESS Medical Supply Delivery">
+  <defs>
+    <!-- Backgrounds -->
+    <linearGradient id="panelBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E"/>
+      <stop offset="100%" style="stop-color:#1e4a85"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F8FAFC"/>
+    </linearGradient>
+    <linearGradient id="bagBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#EFF6FF"/>
+    </linearGradient>
+    <linearGradient id="bagFlap" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35"/>
+      <stop offset="100%" style="stop-color:#9B1827"/>
+    </linearGradient>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+    <linearGradient id="bottleGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FED7AA"/>
+      <stop offset="100%" style="stop-color:#FB923C"/>
+    </linearGradient>
+    <linearGradient id="bottle2Grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#BAE6FD"/>
+      <stop offset="100%" style="stop-color:#38BDF8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="tempGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCA5A5"/>
+      <stop offset="100%" style="stop-color:#EF4444"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-8%" y="-8%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#1B3C6E" flood-opacity="0.22"/>
+    </filter>
+    <filter id="itemShadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#1B3C6E" flood-opacity="0.18"/>
+    </filter>
+    <filter id="badgeShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#CC1F35" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- ===== BACKGROUND PANEL ===== -->
+  <rect width="520" height="560" rx="28" fill="url(#panelBg)"/>
+
+  <!-- Background dot pattern -->
+  <g opacity="0.06">
+    <circle cx="40" cy="40" r="2" fill="white"/><circle cx="80" cy="40" r="2" fill="white"/>
+    <circle cx="120" cy="40" r="2" fill="white"/><circle cx="160" cy="40" r="2" fill="white"/>
+    <circle cx="200" cy="40" r="2" fill="white"/><circle cx="240" cy="40" r="2" fill="white"/>
+    <circle cx="280" cy="40" r="2" fill="white"/><circle cx="320" cy="40" r="2" fill="white"/>
+    <circle cx="360" cy="40" r="2" fill="white"/><circle cx="400" cy="40" r="2" fill="white"/>
+    <circle cx="440" cy="40" r="2" fill="white"/><circle cx="480" cy="40" r="2" fill="white"/>
+    <circle cx="40" cy="80" r="2" fill="white"/><circle cx="80" cy="80" r="2" fill="white"/>
+    <circle cx="120" cy="80" r="2" fill="white"/><circle cx="160" cy="80" r="2" fill="white"/>
+    <circle cx="200" cy="80" r="2" fill="white"/><circle cx="240" cy="80" r="2" fill="white"/>
+    <circle cx="280" cy="80" r="2" fill="white"/><circle cx="320" cy="80" r="2" fill="white"/>
+    <circle cx="360" cy="80" r="2" fill="white"/><circle cx="400" cy="80" r="2" fill="white"/>
+    <circle cx="440" cy="80" r="2" fill="white"/><circle cx="480" cy="80" r="2" fill="white"/>
+    <circle cx="40" cy="490" r="2" fill="white"/><circle cx="80" cy="490" r="2" fill="white"/>
+    <circle cx="120" cy="490" r="2" fill="white"/><circle cx="160" cy="490" r="2" fill="white"/>
+    <circle cx="200" cy="490" r="2" fill="white"/><circle cx="240" cy="490" r="2" fill="white"/>
+    <circle cx="280" cy="490" r="2" fill="white"/><circle cx="320" cy="490" r="2" fill="white"/>
+    <circle cx="360" cy="490" r="2" fill="white"/><circle cx="400" cy="490" r="2" fill="white"/>
+    <circle cx="440" cy="490" r="2" fill="white"/><circle cx="480" cy="490" r="2" fill="white"/>
+    <circle cx="40" cy="530" r="2" fill="white"/><circle cx="80" cy="530" r="2" fill="white"/>
+    <circle cx="120" cy="530" r="2" fill="white"/><circle cx="160" cy="530" r="2" fill="white"/>
+    <circle cx="200" cy="530" r="2" fill="white"/><circle cx="240" cy="530" r="2" fill="white"/>
+    <circle cx="280" cy="530" r="2" fill="white"/><circle cx="320" cy="530" r="2" fill="white"/>
+    <circle cx="360" cy="530" r="2" fill="white"/><circle cx="400" cy="530" r="2" fill="white"/>
+  </g>
+
+  <!-- Red accent stripe at top -->
+  <rect x="0" y="0" width="520" height="6" rx="28" fill="url(#redGrad)"/>
+  <rect x="0" y="0" width="520" height="6" fill="url(#redGrad)"/>
+  <rect x="0" y="0" width="520" height="6" rx="0" fill="url(#redGrad)"/>
+  <rect x="0" y="0" width="520" height="6" rx="28" fill="url(#redGrad)"/>
+
+  <!-- ===== MAIN WHITE CARD (delivery scene) ===== -->
+  <rect x="30" y="50" width="460" height="390" rx="22" fill="url(#cardBg)" filter="url(#cardShadow)"/>
+
+  <!-- Card top red accent -->
+  <rect x="30" y="50" width="460" height="6" rx="22" fill="url(#redGrad)"/>
+  <rect x="30" y="52" width="460" height="4" fill="url(#redGrad)"/>
+
+  <!-- ===== DELIVERY BAG (center-left) ===== -->
+  <g transform="translate(55, 90)" filter="url(#itemShadow)">
+    <!-- Bag body -->
+    <rect x="0" y="55" width="145" height="180" rx="14" fill="url(#bagBody)" stroke="#CBD5E1" stroke-width="1.5"/>
+    <!-- Bag flap -->
+    <rect x="0" y="35" width="145" height="82" rx="14" fill="url(#bagFlap)"/>
+    <rect x="0" y="83" width="145" height="34" fill="url(#bagFlap)"/>
+    <!-- Bag handle -->
+    <path d="M45,35 Q45,10 72.5,10 Q100,10 100,35" fill="none" stroke="#1B3C6E" stroke-width="8" stroke-linecap="round"/>
+    <!-- Handle highlight -->
+    <path d="M52,35 Q52,17 72.5,17 Q93,17 93,35" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.3"/>
+
+    <!-- MEDSWIFT shield on flap -->
+    <g transform="translate(32, 42)">
+      <path d="M40,5 L72,16 L72,42 C72,58 58,70 40,77 C22,70 8,58 8,42 L8,16 Z" fill="white" opacity="0.18"/>
+      <path d="M40,5 L72,16 L72,42 C72,58 58,70 40,77 C22,70 8,58 8,42 L8,16 Z" fill="none" stroke="white" stroke-width="1.5"/>
+      <path d="M8,36 L72,26 L72,33 L8,44 Z" fill="url(#redGrad)" opacity="0.95"/>
+      <text x="40" y="57" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="white" text-anchor="middle">M</text>
+    </g>
+
+    <!-- MEDSWIFT text below shield on flap -->
+    <text x="72" y="112" font-family="Arial Black, Arial, sans-serif" font-size="10" font-weight="900" fill="white" text-anchor="middle" letter-spacing="1">
+      <tspan fill="white">MED</tspan><tspan fill="#FF8899">SWIFT</tspan>
+    </text>
+
+    <!-- Bag body details -->
+    <!-- Red stripe across bag body -->
+    <rect x="0" y="148" width="145" height="14" fill="url(#redGrad)" opacity="0.15"/>
+    <!-- Bag zipper line -->
+    <line x1="10" y1="118" x2="135" y2="118" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4,3"/>
+    <!-- Zipper pull -->
+    <circle cx="72" cy="118" r="5" fill="#94A3B8"/>
+    <circle cx="72" cy="118" r="3" fill="#CBD5E1"/>
+
+    <!-- Bag front pocket -->
+    <rect x="20" y="165" width="105" height="60" rx="8" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Medical cross on pocket -->
+    <rect x="58" y="178" width="10" height="34" rx="3" fill="#CC1F35" opacity="0.8"/>
+    <rect x="44" y="192" width="38" height="10" rx="3" fill="#CC1F35" opacity="0.8"/>
+
+    <!-- Bag shadow bottom -->
+    <ellipse cx="72" cy="237" rx="60" ry="8" fill="#1B3C6E" opacity="0.12"/>
+  </g>
+
+  <!-- ===== PRESCRIPTION BOTTLE 1 (orange, tall) ===== -->
+  <g transform="translate(240, 100)" filter="url(#itemShadow)">
+    <!-- Cap -->
+    <rect x="8" y="0" width="44" height="22" rx="8" fill="#EA580C"/>
+    <rect x="12" y="4" width="36" height="14" rx="5" fill="#FB923C" opacity="0.5"/>
+    <!-- Bottle body -->
+    <rect x="0" y="18" width="60" height="145" rx="10" fill="url(#bottleGrad)" stroke="#FED7AA" stroke-width="1"/>
+    <!-- Label -->
+    <rect x="6" y="38" width="48" height="80" rx="5" fill="white" opacity="0.95"/>
+    <!-- Rx symbol -->
+    <text x="30" y="70" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="#CC1F35" text-anchor="middle">Rx</text>
+    <!-- Label lines -->
+    <rect x="10" y="76" width="40" height="3" rx="1.5" fill="#CBD5E1"/>
+    <rect x="10" y="84" width="32" height="3" rx="1.5" fill="#CBD5E1"/>
+    <rect x="10" y="92" width="36" height="3" rx="1.5" fill="#CBD5E1"/>
+    <rect x="10" y="100" width="28" height="3" rx="1.5" fill="#CBD5E1"/>
+    <!-- MEDSWIFT bottom label -->
+    <rect x="6" y="128" width="48" height="24" rx="5" fill="#1B3C6E" opacity="0.9"/>
+    <text x="30" y="144" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">MEDSWIFT</text>
+    <!-- Highlight -->
+    <rect x="8" y="22" width="10" height="80" rx="5" fill="white" opacity="0.35"/>
+    <!-- Shadow -->
+    <ellipse cx="30" cy="165" rx="26" ry="6" fill="#1B3C6E" opacity="0.12"/>
+  </g>
+
+  <!-- ===== PRESCRIPTION BOTTLE 2 (blue, shorter) ===== -->
+  <g transform="translate(315, 145)" filter="url(#itemShadow)">
+    <!-- Cap -->
+    <rect x="5" y="0" width="38" height="18" rx="7" fill="#0284C7"/>
+    <rect x="9" y="3" width="30" height="11" rx="4" fill="#38BDF8" opacity="0.5"/>
+    <!-- Bottle body -->
+    <rect x="0" y="14" width="48" height="110" rx="8" fill="url(#bottle2Grad)" stroke="#BAE6FD" stroke-width="1"/>
+    <!-- Label -->
+    <rect x="5" y="28" width="38" height="60" rx="4" fill="white" opacity="0.95"/>
+    <text x="24" y="52" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#0284C7" text-anchor="middle">Rx</text>
+    <rect x="8" y="58" width="32" height="2.5" rx="1" fill="#CBD5E1"/>
+    <rect x="8" y="65" width="25" height="2.5" rx="1" fill="#CBD5E1"/>
+    <rect x="8" y="72" width="28" height="2.5" rx="1" fill="#CBD5E1"/>
+    <!-- Brand label -->
+    <rect x="5" y="96" width="38" height="18" rx="4" fill="#1B3C6E" opacity="0.9"/>
+    <text x="24" y="108" font-family="Arial, sans-serif" font-size="6" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">MEDSWIFT</text>
+    <!-- Highlight -->
+    <rect x="6" y="16" width="8" height="60" rx="4" fill="white" opacity="0.35"/>
+    <!-- Shadow -->
+    <ellipse cx="24" cy="126" rx="20" ry="5" fill="#1B3C6E" opacity="0.12"/>
+  </g>
+
+  <!-- ===== MEDICAL SUPPLY BOX (white, red cross) ===== -->
+  <g transform="translate(370, 95)" filter="url(#itemShadow)">
+    <!-- Box body -->
+    <rect x="0" y="20" width="90" height="80" rx="10" fill="url(#boxGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Box top flaps (open) -->
+    <path d="M0,20 L0,5 Q0,0 10,0 L80,0 Q90,0 90,5 L90,20 Z" fill="white" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Left flap -->
+    <path d="M0,10 L-18,3 L-18,20 L0,20 Z" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Right flap -->
+    <path d="M90,10 L108,3 L108,20 L90,20 Z" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1"/>
+    <!-- Red cross on box front -->
+    <rect x="36" y="30" width="18" height="60" rx="5" fill="#CC1F35" opacity="0.15"/>
+    <rect x="20" y="48" width="50" height="18" rx="5" fill="#CC1F35" opacity="0.15"/>
+    <rect x="38" y="33" width="14" height="54" rx="4" fill="#CC1F35"/>
+    <rect x="22" y="50" width="46" height="14" rx="4" fill="#CC1F35"/>
+    <!-- Box label strip -->
+    <rect x="0" y="85" width="90" height="15" rx="0" fill="#1B3C6E" opacity="0.08"/>
+    <text x="45" y="96" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1B3C6E" text-anchor="middle" letter-spacing="1.5">MEDICAL SUPPLIES</text>
+    <!-- Barcode lines -->
+    <g transform="translate(20, 35)" opacity="0.25">
+      <rect x="0" y="0" width="2" height="12" fill="#334155"/>
+      <rect x="4" y="0" width="1" height="12" fill="#334155"/>
+      <rect x="7" y="0" width="3" height="12" fill="#334155"/>
+      <rect x="12" y="0" width="1" height="12" fill="#334155"/>
+      <rect x="15" y="0" width="2" height="12" fill="#334155"/>
+    </g>
+    <!-- Shadow -->
+    <ellipse cx="45" cy="102" rx="40" ry="7" fill="#1B3C6E" opacity="0.10"/>
+  </g>
+
+  <!-- ===== THERMOMETER / TEMPERATURE INDICATOR ===== -->
+  <g transform="translate(75, 310)" filter="url(#itemShadow)">
+    <!-- Outer body -->
+    <rect x="12" y="0" width="22" height="90" rx="11" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Temperature bar -->
+    <rect x="17" y="30" width="12" height="55" rx="6" fill="#FCA5A5" opacity="0.4"/>
+    <rect x="17" y="48" width="12" height="37" rx="6" fill="url(#tempGrad)"/>
+    <!-- Bulb -->
+    <circle cx="23" cy="82" r="13" fill="url(#tempGrad)" stroke="#E2E8F0" stroke-width="1.5"/>
+    <circle cx="23" cy="82" r="8" fill="#EF4444"/>
+    <!-- Scale marks -->
+    <line x1="30" y1="35" x2="36" y2="35" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="30" y1="45" x2="36" y2="45" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="30" y1="55" x2="36" y2="55" stroke="#CBD5E1" stroke-width="1.5"/>
+    <line x1="30" y1="65" x2="36" y2="65" stroke="#CBD5E1" stroke-width="1.5"/>
+    <!-- Label -->
+    <rect x="0" y="0" width="12" height="50" rx="4" fill="#EFF6FF"/>
+    <text x="6" y="30" font-family="Arial, sans-serif" font-size="6" fill="#1B3C6E" text-anchor="middle" transform="rotate(-90,6,25)">TEMP</text>
+    <ellipse cx="23" cy="96" rx="10" ry="4" fill="#1B3C6E" opacity="0.1"/>
+  </g>
+
+  <!-- ===== CLIPBOARD / DELIVERY CONFIRMATION ===== -->
+  <g transform="translate(150, 305)" filter="url(#itemShadow)">
+    <!-- Board -->
+    <rect x="0" y="15" width="120" height="155" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1.5"/>
+    <!-- Clip -->
+    <rect x="35" y="5" width="50" height="22" rx="6" fill="#94A3B8"/>
+    <rect x="38" y="8" width="44" height="16" rx="4" fill="#CBD5E1"/>
+    <rect x="45" y="12" width="30" height="8" rx="3" fill="#94A3B8"/>
+    <!-- Paper on board -->
+    <rect x="8" y="28" width="104" height="134" rx="4" fill="white"/>
+    <!-- Header area -->
+    <rect x="8" y="28" width="104" height="28" rx="4" fill="#1B3C6E"/>
+    <text x="60" y="44" font-family="Arial Black, sans-serif" font-size="8" font-weight="900" fill="white" text-anchor="middle" letter-spacing="0.5">DELIVERY CONFIRM</text>
+    <!-- Content lines -->
+    <rect x="16" y="64" width="70" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="16" y="74" width="55" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="16" y="84" width="65" height="4" rx="2" fill="#E2E8F0"/>
+    <rect x="16" y="94" width="48" height="4" rx="2" fill="#E2E8F0"/>
+    <!-- Checkboxes -->
+    <rect x="16" y="108" width="12" height="12" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="22" y="118" font-family="Arial" font-size="9" fill="#16A34A" text-anchor="middle" font-weight="900">✓</text>
+    <rect x="16" y="125" width="12" height="12" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="22" y="135" font-family="Arial" font-size="9" fill="#16A34A" text-anchor="middle" font-weight="900">✓</text>
+    <rect x="16" y="142" width="12" height="12" rx="2" fill="#DCFCE7" stroke="#16A34A" stroke-width="1.5"/>
+    <text x="22" y="152" font-family="Arial" font-size="9" fill="#16A34A" text-anchor="middle" font-weight="900">✓</text>
+    <rect x="32" y="110" width="55" height="3" rx="1.5" fill="#CBD5E1"/>
+    <rect x="32" y="127" width="45" height="3" rx="1.5" fill="#CBD5E1"/>
+    <rect x="32" y="144" width="50" height="3" rx="1.5" fill="#CBD5E1"/>
+    <!-- Signature line -->
+    <line x1="16" y1="162" x2="104" y2="162" stroke="#E2E8F0" stroke-width="1.5"/>
+    <text x="60" y="158" font-family="Arial, sans-serif" font-size="6" fill="#94A3B8" text-anchor="middle">Patient Signature</text>
+    <ellipse cx="60" cy="172" rx="52" ry="5" fill="#1B3C6E" opacity="0.08"/>
+  </g>
+
+  <!-- ===== PILL STRIP / BLISTER PACK ===== -->
+  <g transform="translate(300, 300)" filter="url(#itemShadow)">
+    <rect x="0" y="0" width="150" height="60" rx="8" fill="#FEF9C3" stroke="#FDE68A" stroke-width="1.5"/>
+    <!-- Foil dividers -->
+    <line x1="25" y1="0" x2="25" y2="60" stroke="#FDE68A" stroke-width="1"/>
+    <line x1="50" y1="0" x2="50" y2="60" stroke="#FDE68A" stroke-width="1"/>
+    <line x1="75" y1="0" x2="75" y2="60" stroke="#FDE68A" stroke-width="1"/>
+    <line x1="100" y1="0" x2="100" y2="60" stroke="#FDE68A" stroke-width="1"/>
+    <line x1="125" y1="0" x2="125" y2="60" stroke="#FDE68A" stroke-width="1"/>
+    <line x1="0" y1="30" x2="150" y2="30" stroke="#FDE68A" stroke-width="1"/>
+    <!-- Pills -->
+    <ellipse cx="12" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="37" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="62" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="87" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="112" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="137" cy="15" rx="8" ry="10" fill="#FDE68A"/>
+    <!-- Bottom row - some taken (popped) -->
+    <ellipse cx="12" cy="45" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="37" cy="45" rx="8" ry="10" fill="#FDE68A"/>
+    <ellipse cx="62" cy="45" rx="8" ry="10" fill="#FDE68A"/>
+    <!-- Popped blister holes -->
+    <ellipse cx="87" cy="45" rx="8" ry="10" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3,2"/>
+    <ellipse cx="112" cy="45" rx="8" ry="10" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3,2"/>
+    <ellipse cx="137" cy="45" rx="8" ry="10" fill="#FEF3C7" stroke="#FDE68A" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Label -->
+    <text x="75" y="72" font-family="Arial, sans-serif" font-size="7" fill="#92400E" text-anchor="middle" font-weight="600">Daily Medication Strip</text>
+    <ellipse cx="75" cy="62" rx="65" ry="5" fill="#1B3C6E" opacity="0.08"/>
+  </g>
+
+  <!-- ===== MEDSWIFT SHIELD BADGE (floating, bottom-right of card) ===== -->
+  <g transform="translate(388, 342)" filter="url(#badgeShadow)">
+    <rect x="0" y="0" width="86" height="86" rx="18" fill="#CC1F35"/>
+    <g transform="translate(11, 8)">
+      <path d="M32,4 L60,14 L60,40 C60,56 48,66 32,73 C16,66 4,56 4,40 L4,14 Z" fill="white" opacity="0.18"/>
+      <path d="M32,4 L60,14 L60,40 C60,56 48,66 32,73 C16,66 4,56 4,40 L4,14 Z" fill="none" stroke="white" stroke-width="1.5"/>
+      <path d="M4,34 L60,25 L60,32 L4,41 Z" fill="white" opacity="0.6"/>
+      <text x="32" y="54" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="white" text-anchor="middle">M</text>
+    </g>
+  </g>
+
+  <!-- ===== BOTTOM BRAND BAR ===== -->
+  <rect x="0" y="460" width="520" height="100" rx="28" fill="#0F2549"/>
+  <rect x="0" y="438" width="520" height="30" fill="#0F2549"/>
+
+  <!-- Logo in bottom bar -->
+  <g transform="translate(30, 475)">
+    <!-- Mini shield -->
+    <path d="M22,3 L40,9 L40,24 C40,33 32,39 22,43 C12,39 4,33 4,24 L4,9 Z" fill="url(#shieldGrad)"/>
+    <path d="M4,21 L40,16 L40,20 L4,25 Z" fill="url(#redGrad)" opacity="0.95"/>
+    <text x="22" y="32" font-family="Arial Black" font-size="14" font-weight="900" fill="white" text-anchor="middle">M</text>
+  </g>
+
+  <!-- Brand wordmark in bottom bar -->
+  <text x="80" y="494" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="white" letter-spacing="-1">
+    <tspan fill="white">MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  </text>
+  <text x="81" y="513" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="white" letter-spacing="6" opacity="0.85">EXPRESS</text>
+  <rect x="81" y="518" width="42" height="2" fill="#CC1F35" rx="1"/>
+
+  <!-- Tagline / right side of bottom bar -->
+  <text x="490" y="487" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="end" opacity="0.7" letter-spacing="0.5">Reliable Medical Courier</text>
+  <text x="490" y="503" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="white" text-anchor="end" opacity="0.7" letter-spacing="0.5">Atlanta, GA Metro Area</text>
+  <text x="490" y="519" font-family="Arial, Helvetica, sans-serif" font-size="11" fill="#FF4D65" text-anchor="end" font-weight="700" letter-spacing="0.5">medswiftexpress.com</text>
+
+  <!-- Bottom red line accent -->
+  <rect x="0" y="554" width="520" height="6" rx="28" fill="url(#redGrad)"/>
+  <rect x="0" y="553" width="520" height="7" fill="url(#redGrad)"/>
+  <rect x="0" y="553" width="520" height="7" rx="28" fill="url(#redGrad)"/>
+</svg>
