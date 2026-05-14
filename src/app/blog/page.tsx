@@ -11,7 +11,7 @@ const posts = [
     slug: "why-pharmacies-need-dedicated-medical-courier",
     date: "May 1, 2026",
     category: "Industry Insights",
-    categoryColor: "bg-brand-light text-brand-blue",
+    categoryColor: "bg-brand-navy/10 text-brand-navy",
     title: "Why Pharmacies Need a Dedicated Medical Courier (Not a General Delivery App)",
     excerpt: "General delivery apps are built for speed, not for healthcare. Here's why a dedicated medical courier partner makes a real difference for your pharmacy and your patients.",
     readTime: "4 min read",
@@ -31,7 +31,7 @@ const posts = [
     slug: "hipaa-medical-courier-what-you-need-to-know",
     date: "April 10, 2026",
     category: "Compliance",
-    categoryColor: "bg-green-50 text-brand-green",
+    categoryColor: "bg-brand-redlt text-brand-red",
     title: "HIPAA and Medical Courier Services: What Healthcare Providers Should Know",
     excerpt: "When you hand a prescription to a courier driver, patient privacy is on the line. Here's what to look for when choosing a HIPAA-aware delivery partner.",
     readTime: "6 min read",
@@ -41,7 +41,7 @@ const posts = [
     slug: "same-day-prescription-delivery-guide",
     date: "March 28, 2026",
     category: "Services",
-    categoryColor: "bg-brand-light text-brand-blue",
+    categoryColor: "bg-brand-navy/10 text-brand-navy",
     title: "Same-Day Prescription Delivery: A Complete Guide for Pharmacies",
     excerpt: "Offering same-day delivery can set your pharmacy apart — but only if it's done right. Here's everything you need to know about setting up a reliable same-day delivery workflow.",
     readTime: "5 min read",
@@ -51,7 +51,7 @@ const posts = [
     slug: "medical-courier-vs-rideshare-delivery",
     date: "March 15, 2026",
     category: "Industry Insights",
-    categoryColor: "bg-brand-light text-brand-blue",
+    categoryColor: "bg-brand-navy/10 text-brand-navy",
     title: "Medical Courier vs. Rideshare Delivery Apps: The Critical Difference",
     excerpt: "Some pharmacies use rideshare apps for prescription delivery. Here's why that approach carries serious risks — and what a purpose-built medical courier does differently.",
     readTime: "4 min read",
@@ -91,7 +91,7 @@ export default function BlogPage() {
           {/* Featured post */}
           <div className="bg-white rounded-3xl border border-slate-100 shadow-sm overflow-hidden mb-10">
             <div className="grid md:grid-cols-2">
-              <div className="bg-gradient-to-br from-brand-navy to-brand-blue p-10 flex flex-col justify-center">
+              <div className="bg-gradient-to-br from-brand-navy to-[#1e4a85] p-10 flex flex-col justify-center">
                 <span className="text-5xl mb-4">{posts[0].icon}</span>
                 <span className="inline-block bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full mb-3 w-fit">
                   {posts[0].category}
@@ -101,7 +101,7 @@ export default function BlogPage() {
               <div className="p-10 flex flex-col justify-center">
                 <p className="text-slate-500 text-xs mb-3">{posts[0].date} · {posts[0].readTime}</p>
                 <p className="text-slate-600 leading-relaxed mb-6">{posts[0].excerpt}</p>
-                <span className="inline-flex items-center gap-2 text-brand-blue font-semibold text-sm">
+                <span className="inline-flex items-center gap-2 text-brand-navy font-semibold text-sm">
                   Coming Soon <span className="text-xs bg-brand-light px-2 py-0.5 rounded-full">Article in progress</span>
                 </span>
               </div>

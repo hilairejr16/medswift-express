@@ -72,20 +72,20 @@ export default function QuotePage() {
                 </ol>
               </div>
 
-              <div className="card bg-brand-light border-brand-blue/20">
+              <div className="card bg-brand-redlt border-brand-red/20">
                 <h3 className="font-bold text-brand-navy mb-3">Need Help Now?</h3>
                 <p className="text-slate-600 text-sm mb-4">
                   For urgent or same-day requests, call us directly.
                 </p>
                 <a
                   href="tel:7579408468"
-                  className="flex items-center gap-2 text-brand-blue font-semibold text-sm hover:text-brand-navy transition-colors"
+                  className="flex items-center gap-2 text-brand-red font-semibold text-sm hover:text-brand-navy transition-colors"
                 >
                   📞 (757) 940-8468
                 </a>
                 <a
                   href="mailto:beatricenatasha99@gmail.com"
-                  className="flex items-center gap-2 text-brand-blue font-semibold text-sm hover:text-brand-navy transition-colors mt-2"
+                  className="flex items-center gap-2 text-brand-red font-semibold text-sm hover:text-brand-navy transition-colors mt-2"
                 >
                   ✉️ beatricenatasha99@gmail.com
                 </a>

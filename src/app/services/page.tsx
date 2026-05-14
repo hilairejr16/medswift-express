@@ -29,14 +29,14 @@ export default function ServicesPage() {
             {sp.services.map((svc) => (
               <div
                 key={svc.title}
-                className="rounded-2xl border border-slate-100 p-8 hover:border-brand-blue hover:shadow-lg transition-all duration-200 group"
+                className="rounded-2xl border border-slate-100 p-8 hover:border-brand-red hover:shadow-lg transition-all duration-200 group"
               >
                 <div className="flex items-start gap-5">
-                  <div className="w-14 h-14 bg-brand-light rounded-2xl flex items-center justify-center flex-shrink-0 text-2xl group-hover:bg-brand-blue group-hover:text-white transition-all duration-200">
+                  <div className="w-14 h-14 bg-brand-navy/8 rounded-2xl flex items-center justify-center flex-shrink-0 text-2xl group-hover:bg-brand-red group-hover:text-white transition-all duration-200">
                     {svc.icon}
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-bold text-brand-navy text-xl mb-3 group-hover:text-brand-blue transition-colors">
+                    <h3 className="font-bold text-brand-navy text-xl mb-3 group-hover:text-brand-red transition-colors">
                       {svc.title}
                     </h3>
                     <p className="text-slate-500 text-sm leading-relaxed mb-4">{svc.desc}</p>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                       {svc.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="text-xs font-medium text-brand-blue bg-brand-light px-3 py-1 rounded-full"
+                          className="text-xs font-medium text-brand-navy bg-brand-navy/10 px-3 py-1 rounded-full"
                         >
                           {tag}
                         </span>
@@ -59,14 +59,14 @@ export default function ServicesPage() {
       </section>
 
       {/* ── Pricing Info ──────────────────────────────────── */}
-      <section className="py-16 bg-brand-light">
+      <section className="py-16 bg-brand-redlt">
         <div className="container-md text-center">
           <div className="text-4xl mb-4">💳</div>
           <h2 className="section-title mb-4">{sp.pricing.title}</h2>
           <p className="text-slate-500 text-base leading-relaxed mb-3 max-w-xl mx-auto">
             {sp.pricing.sub}
           </p>
-          <p className="text-brand-blue text-sm font-medium mb-8">{sp.pricing.note}</p>
+          <p className="text-brand-navy text-sm font-medium mb-8">{sp.pricing.note}</p>
           <Link href="/quote/" className="btn-primary text-base px-8 py-3.5">
             {sp.pricing.cta} →
           </Link>

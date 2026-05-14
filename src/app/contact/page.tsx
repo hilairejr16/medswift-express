@@ -75,7 +75,7 @@ export default function ContactPage() {
                         {item.href ? (
                           <a
                             href={item.href}
-                            className="text-brand-navy font-semibold hover:text-brand-blue transition-colors"
+                            className="text-brand-navy font-semibold hover:text-brand-red transition-colors"
                           >
                             {item.value}
                           </a>
@@ -97,7 +97,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href="/quote/"
-                  className="inline-flex items-center gap-2 bg-brand-green text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-green-700 transition-colors"
+                  className="inline-flex items-center gap-2 bg-brand-red text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-redmid transition-colors"
                 >
                   {tx.nav.quote} →
                 </a>

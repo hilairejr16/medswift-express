@@ -154,7 +154,7 @@ export default function HomePage() {
 
           <div className="relative">
             {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-brand-light via-brand-blue to-brand-light" />
+            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-white via-brand-red to-white" />
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
               {tx.steps.map((step, i) => (
@@ -178,7 +178,7 @@ export default function HomePage() {
       </section>
 
       {/* ── Why Choose Us ─────────────────────────────────── */}
-      <section className="py-20 bg-brand-light">
+      <section className="py-20 bg-slate-50">
         <div className="container-lg">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -198,7 +198,7 @@ export default function HomePage() {
                   "Real-time delivery confirmation for every order",
                 ].map((point, i) => (
                   <li key={point} className="flex items-start gap-3">
-                    <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${i % 2 === 0 ? "bg-brand-red" : "bg-brand-green"}`}>
+                    <div className={`mt-0.5 w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 ${i % 2 === 0 ? "bg-brand-red" : "bg-brand-navy"}`}>
                       <svg className="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
                       </svg>
@@ -244,14 +244,14 @@ export default function HomePage() {
               </div>
             </div>
             <div className="md:border-x border-slate-200 flex flex-col items-center gap-3 md:py-4">
-              <div className="w-16 h-16 bg-brand-light rounded-2xl flex items-center justify-center text-3xl">👔</div>
+              <div className="w-16 h-16 bg-brand-navy/10 rounded-2xl flex items-center justify-center text-3xl">👔</div>
               <div>
                 <p className="font-bold text-brand-navy">Uniformed Drivers</p>
                 <p className="text-slate-500 text-sm">Trained, courteous, and professional</p>
               </div>
             </div>
             <div className="flex flex-col items-center gap-3">
-              <div className="w-16 h-16 bg-brand-greenlt rounded-2xl flex items-center justify-center text-3xl">✅</div>
+              <div className="w-16 h-16 bg-brand-redlt rounded-2xl flex items-center justify-center text-3xl">✅</div>
               <div>
                 <p className="font-bold text-brand-navy">Confirmed Delivery</p>
                 <p className="text-slate-500 text-sm">Every order tracked and confirmed</p>

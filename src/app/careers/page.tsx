@@ -12,7 +12,7 @@ const openings = [
     type: "Full-Time",
     location: "Atlanta, GA Metro",
     tag: "Hiring Now",
-    color: "bg-brand-greenlt text-brand-green",
+    color: "bg-brand-redlt text-brand-red",
     desc: "Deliver prescriptions and medical supplies across the Atlanta metro area. Represent MEDSWIFT EXPRESS with professionalism and reliability on every run.",
     requirements: [
       "Valid Georgia driver's license with clean driving record",
@@ -27,7 +27,7 @@ const openings = [
     type: "Part-Time / Flexible",
     location: "Atlanta, GA Metro",
     tag: "Hiring Now",
-    color: "bg-brand-greenlt text-brand-green",
+    color: "bg-brand-redlt text-brand-red",
     desc: "Flexible delivery runs for drivers looking for part-time work in the medical courier space. Set your availability and build a consistent route over time.",
     requirements: [
       "Valid Georgia driver's license",
@@ -113,7 +113,7 @@ export default function CareersPage() {
                   <div>
                     <h3 className="text-xl font-bold text-brand-navy">{job.title}</h3>
                     <div className="flex flex-wrap gap-2 mt-2">
-                      <span className="text-xs bg-brand-light text-brand-blue px-3 py-1 rounded-full font-medium">{job.type}</span>
+                      <span className="text-xs bg-brand-navy/10 text-brand-navy px-3 py-1 rounded-full font-medium">{job.type}</span>
                       <span className="text-xs bg-slate-100 text-slate-600 px-3 py-1 rounded-full font-medium">📍 {job.location}</span>
                     </div>
                   </div>
@@ -125,7 +125,7 @@ export default function CareersPage() {
                   <ul className="space-y-1">
                     {job.requirements.map((r) => (
                       <li key={r} className="flex items-start gap-2 text-slate-600 text-sm">
-                        <span className="text-brand-green mt-0.5">✓</span> {r}
+                        <span className="text-brand-red mt-0.5">✓</span> {r}
                       </li>
                     ))}
                   </ul>

@@ -98,7 +98,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="py-16 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="bg-brand-light border border-brand-blue/20 rounded-2xl p-6 mb-10">
+          <div className="bg-brand-redlt border border-brand-red/20 rounded-2xl p-6 mb-10">
             <p className="text-slate-700 text-sm leading-relaxed">
               <strong className="text-brand-navy">Your privacy matters to us.</strong> MEDSWIFT EXPRESS is committed to protecting the personal information of our clients, healthcare partners, and website visitors. This policy explains what we collect, how we use it, and your rights.
             </p>

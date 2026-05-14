@@ -62,7 +62,7 @@ export default function Header() {
                 <div className="text-brand-navy font-black text-sm tracking-tight leading-tight">
                   MED<span className="text-brand-red">SWIFT</span>
                 </div>
-                <div className="text-brand-blue font-semibold text-[10px] tracking-[0.15em] uppercase leading-tight">
+                <div className="text-brand-navy font-semibold text-[10px] tracking-[0.15em] uppercase leading-tight">
                   COURIER
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function Header() {
                 href={href}
                 className={`px-3.5 py-2 rounded-lg text-sm font-medium transition-colors duration-150 ${
                   isActive(href)
-                    ? "text-brand-blue bg-brand-light"
+                    ? "text-brand-red bg-brand-redlt"
                     : "text-slate-600 hover:text-brand-navy hover:bg-slate-50"
                 }`}
               >
@@ -92,7 +92,7 @@ export default function Header() {
             <button
               onClick={toggle}
               aria-label="Toggle language"
-              className="hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:border-brand-blue hover:text-brand-blue transition-colors"
+              className="hidden sm:flex items-center gap-1 px-3 py-1.5 rounded-lg border border-slate-200 text-xs font-semibold text-slate-600 hover:border-brand-navy hover:text-brand-navy transition-colors"
             >
               <span>{lang === "en" ? "🇺🇸" : "🇪🇸"}</span>
               <span>{lang === "en" ? "ES" : "EN"}</span>
@@ -148,7 +148,7 @@ export default function Header() {
               href={href}
               className={`px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                 isActive(href)
-                  ? "text-brand-blue bg-brand-light"
+                  ? "text-brand-red bg-brand-redlt"
                   : "text-slate-700 hover:bg-slate-50"
               }`}
             >

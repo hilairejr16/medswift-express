@@ -12,8 +12,8 @@ const docs = [
     title: "Privacy Policy",
     desc: "How we collect, use, and protect your personal information.",
     href: "/privacy-policy/",
-    color: "bg-brand-light border-brand-blue/20",
-    textColor: "text-brand-blue",
+    color: "bg-brand-redlt border-brand-red/20",
+    textColor: "text-brand-red",
   },
   {
     icon: "📋",

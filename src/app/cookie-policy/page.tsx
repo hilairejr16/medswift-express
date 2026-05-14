@@ -22,7 +22,7 @@ export default function CookiePolicyPage() {
       <section className="py-16 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 space-y-6">
 
-          <div className="bg-brand-light border border-brand-blue/20 rounded-2xl p-6">
+          <div className="bg-brand-redlt border border-brand-red/20 rounded-2xl p-6">
             <p className="text-slate-700 text-sm leading-relaxed">
               <strong className="text-brand-navy">We keep it simple.</strong> MEDSWIFT EXPRESS uses only essential cookies — no advertising trackers, no third-party profiling. This policy explains exactly what we use and why.
             </p>
@@ -99,7 +99,7 @@ Note: Disabling cookies may affect some functionality, such as the language pref
                     <tbody>
                       {s.table.map((row) => (
                         <tr key={row.name} className="border-b border-slate-100">
-                          <td className="py-3 pr-4 font-mono text-brand-blue text-xs">{row.name}</td>
+                          <td className="py-3 pr-4 font-mono text-brand-navy text-xs">{row.name}</td>
                           <td className="py-3 pr-4 text-slate-600">{row.purpose}</td>
                           <td className="py-3 pr-4 text-slate-500">{row.type}</td>
                           <td className="py-3 text-slate-500">{row.duration}</td>
@@ -113,7 +113,7 @@ Note: Disabling cookies may affect some functionality, such as the language pref
           ))}
 
           <div className="text-center pt-4">
-            <Link href="/privacy-policy/" className="text-brand-blue text-sm hover:underline">
+            <Link href="/privacy-policy/" className="text-brand-navy text-sm hover:underline">
               ← Also read our Privacy Policy
             </Link>
           </div>
