@@ -65,35 +65,53 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Logo + Van illustration */}
-            <div className="hidden lg:flex flex-col gap-6 justify-center items-center">
+            {/* Right — Professional Fleet card (logo + van/driver + banner) */}
+            <div className="hidden lg:flex justify-center items-center">
+              <div className="relative w-full max-w-md">
 
-              {/* Logo (white version — designed for dark backgrounds) */}
-              <div className="w-full flex justify-center">
-                <img
-                  src="/logos/logo-white.svg"
-                  alt="MEDSWIFT EXPRESS logo"
-                  className="w-full max-w-sm drop-shadow-2xl"
-                />
-              </div>
+                {/* Glow behind card */}
+                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl scale-110" />
 
-              {/* Van illustration */}
-              <div className="relative w-full">
-                <div className="absolute inset-0 bg-white/5 rounded-3xl blur-2xl scale-110" />
-                <div className="relative bg-white/10 backdrop-blur-sm rounded-3xl p-4 border border-white/20 shadow-2xl">
-                  <img
-                    src="/logos/van-illustration.svg"
-                    alt="MEDSWIFT EXPRESS delivery van on the road in Atlanta"
-                    className="w-full max-w-md rounded-xl"
-                  />
+                {/* Card */}
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+
+                  {/* ── Logo strip (white bg) ── */}
+                  <div className="bg-white px-8 py-5 flex justify-center items-center">
+                    <img
+                      src="/logos/logo-horizontal.svg"
+                      alt="MEDSWIFT EXPRESS logo"
+                      className="h-14 w-auto"
+                    />
+                  </div>
+
+                  {/* ── Van + Driver photo ── */}
+                  <div className="relative">
+                    <img
+                      src="/medswift-brand.jpg"
+                      alt="MedSwift Courier — branded van and professional driver"
+                      className="w-full object-cover"
+                      style={{ maxHeight: "260px", objectPosition: "center center" }}
+                    />
+                    {/* Subtle gradient overlay at bottom of photo */}
+                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#1B3C6E]/60 to-transparent" />
+                  </div>
+
+                  {/* ── Blue "Professional Fleet & Team" banner ── */}
+                  <div className="bg-[#1B3C6E] px-5 py-3.5 flex items-center gap-3">
+                    <span className="text-xl flex-shrink-0">🚐</span>
+                    <div>
+                      <p className="text-white font-black text-sm leading-tight">Professional Fleet &amp; Team</p>
+                      <p className="text-blue-200 text-xs mt-0.5">Serving Atlanta, GA Metro Area</p>
+                    </div>
+                    {/* Live dot -->  */}
+                    <div className="ml-auto flex items-center gap-1.5">
+                      <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse" />
+                      <span className="text-blue-200 text-xs font-medium">Active</span>
+                    </div>
+                  </div>
+
                 </div>
-                {/* Floating badge */}
-                <div className="absolute -bottom-4 -left-2 bg-brand-red text-white text-xs font-bold px-4 py-2 rounded-xl shadow-xl flex items-center gap-2">
-                  <span className="w-2 h-2 bg-white rounded-full animate-pulse inline-block" />
-                  On the road in Atlanta
-                </div>
               </div>
-
             </div>
 
           </div>
