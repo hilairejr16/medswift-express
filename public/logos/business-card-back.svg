@@ -1,57 +1,64 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 600" width="1050" height="600" role="img" aria-label="MEDSWIFT EXPRESS Business Card Back">
-  <!--
-    Print Specs: 3.5" x 2" @ 300 DPI = 1050 x 600 px
-    Back of card — clean white design with navy/red accents
-  -->
+  <!--  3.5" × 2" @ 300 DPI = 1050 × 600 px  —  clean white back  -->
   <defs>
-    <linearGradient id="backSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#CC1F35" />
-      <stop offset="100%" style="stop-color:#9B1827" />
+    <linearGradient id="bk-shield" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e4d8c"/>
+      <stop offset="100%" stop-color="#1B3C6E"/>
     </linearGradient>
-    <linearGradient id="iconBgBack" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1B3C6E" />
-      <stop offset="100%" style="stop-color:#2563EB" />
+    <linearGradient id="bk-swoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC1F35"/>
+      <stop offset="100%" stop-color="#A01828"/>
+    </linearGradient>
+    <linearGradient id="bk-hl" x1="0%" y1="0%" x2="0%" y2="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- White background -->
-  <rect width="1050" height="600" fill="white" rx="18"/>
+  <rect width="1050" height="600" rx="18" fill="#ffffff"/>
 
   <!-- Navy top bar -->
-  <rect x="0" y="0" width="1050" height="14" fill="#1B3C6E" rx="18"/>
-  <rect x="0" y="0" width="1050" height="14" fill="#1B3C6E" rx="0"/>
-  <rect x="0" y="0" width="1050" height="14" rx="18" fill="#1B3C6E"/>
+  <rect x="0" y="0" width="1050" height="12" rx="18" fill="#1B3C6E"/>
+  <rect x="0" y="0" width="1050" height="12" fill="#1B3C6E" rx="0"/>
+  <rect x="0" y="0" width="1050" height="12" rx="18" fill="#1B3C6E"/>
 
   <!-- Red bottom bar -->
-  <rect x="0" y="586" width="1050" height="14" fill="url(#backSwoosh)" rx="0"/>
+  <rect x="0" y="588" width="1050" height="12" rx="18" fill="#CC1F35"/>
+  <rect x="0" y="588" width="1050" height="12" fill="#CC1F35" rx="0"/>
+  <rect x="0" y="588" width="1050" height="12" rx="18" fill="#CC1F35"/>
 
-  <!-- Left red accent stripe -->
-  <rect x="0" y="0" width="16" height="600" fill="url(#backSwoosh)"/>
+  <!-- Left navy accent stripe -->
+  <rect x="0" y="0" width="14" height="600" fill="#1B3C6E"/>
+  <!-- Right red accent stripe -->
+  <rect x="1036" y="0" width="14" height="600" fill="#CC1F35"/>
 
-  <!-- Right navy accent stripe -->
-  <rect x="1034" y="0" width="16" height="600" fill="#1B3C6E"/>
-
-  <!-- Center shield icon -->
-  <g transform="translate(388, 75)">
-    <path d="M137,18 L230,50 L230,158 C230,218 188,265 137,288 C86,265 44,218 44,158 L44,50 Z" fill="url(#iconBgBack)"/>
-    <!-- Swoosh in shield -->
-    <path d="M44,135 L230,104 L230,122 L44,155 Z" fill="url(#backSwoosh)" opacity="0.95"/>
-    <!-- M lettermark -->
-    <text x="137" y="210" font-family="Arial Black, Arial, sans-serif" font-size="90" font-weight="900" fill="white" text-anchor="middle">M</text>
+  <!-- Shield centered — scale 2.4, shield = 240×276; center at (525-120=405, 600/2-138=162) -->
+  <g transform="translate(405, 62) scale(2.4)">
+    <path d="M50,3 L97,17 L97,63 C97,91 77,108 50,118 C23,108 3,91 3,63 L3,17 Z" fill="url(#bk-shield)"/>
+    <path d="M50,8 L92,21 L92,63 C92,88 74,103 50,112 C26,103 8,88 8,63 L8,21 Z" fill="none" stroke="#fff" stroke-width="0.7" stroke-opacity="0.18"/>
+    <path d="M50,8 L92,21 L92,48 C78,28 50,20 8,36 L8,21 Z" fill="url(#bk-hl)"/>
+    <path d="M3,57 L97,41 L97,54 L3,70 Z" fill="url(#bk-swoosh)"/>
+    <path d="M18,108 L18,65 L29,65 L50,89 L71,65 L82,65 L82,108 L73,108 L73,78 L51,97 L49,97 L27,78 L27,108 Z" fill="#ffffff"/>
   </g>
 
-  <!-- MEDSWIFT EXPRESS centered -->
-  <text x="525" y="415" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="#1B3C6E" text-anchor="middle" letter-spacing="-2">
+  <!-- Wordmark centered -->
+  <text x="525" y="432"
+        font-family="'Arial Black','Arial Bold',Arial,sans-serif"
+        font-size="62" font-weight="900" letter-spacing="-2"
+        text-anchor="middle">
     <tspan fill="#1B3C6E">MED</tspan><tspan fill="#CC1F35">SWIFT</tspan>
   </text>
-  <text x="525" y="450" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#1B3C6E" text-anchor="middle" letter-spacing="8">EXPRESS</text>
+  <text x="525" y="468"
+        font-family="'Arial Black','Arial Bold',Arial,sans-serif"
+        font-size="20" font-weight="900" letter-spacing="12"
+        fill="#1B3C6E" text-anchor="middle" opacity="0.8">EXPRESS</text>
 
   <!-- Red underline -->
-  <rect x="455" y="458" width="140" height="2.5" fill="#CC1F35" rx="1.5"/>
-
-  <!-- Tagline -->
-  <text x="525" y="494" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#64748B" text-anchor="middle" letter-spacing="2">RELIABLE MEDICAL COURIER SERVICES</text>
+  <rect x="448" y="478" width="154" height="3" rx="1.5" fill="#CC1F35"/>
 
   <!-- Website -->
-  <text x="525" y="555" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#1B3C6E" text-anchor="middle" letter-spacing="1">medswiftexpress.com</text>
+  <text x="525" y="552"
+        font-family="Arial,sans-serif" font-size="18" font-weight="700"
+        fill="#1B3C6E" text-anchor="middle" letter-spacing="1">medswiftexpress.com</text>
 </svg>

@@ -1,39 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="MEDSWIFT EXPRESS Square Logo">
   <defs>
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1B3C6E;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#2563EB;stop-opacity:1" />
+    <linearGradient id="sq-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e4d8c"/>
+      <stop offset="100%" stop-color="#1B3C6E"/>
     </linearGradient>
-    <linearGradient id="swooshGradSq" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#CC1F35;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#9B1827;stop-opacity:1" />
+    <linearGradient id="sq-shield" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#2255a4"/>
+      <stop offset="100%" stop-color="#163260"/>
+    </linearGradient>
+    <linearGradient id="sq-swoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC1F35"/>
+      <stop offset="100%" stop-color="#A01828"/>
+    </linearGradient>
+    <linearGradient id="sq-highlight" x1="0%" y1="0%" x2="0%" y2="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
-  <!-- Background square with rounded corners -->
-  <rect width="500" height="500" rx="60" fill="url(#bgGrad)" />
+  <!-- Background -->
+  <rect width="500" height="500" rx="56" fill="url(#sq-bg)"/>
 
-  <!-- Shield shape centered -->
-  <g transform="translate(140, 40)">
-    <path d="M110,12 L198,44 L198,140 C198,195 155,238 110,258 C65,238 22,195 22,140 L22,44 Z" fill="white" opacity="0.12"/>
-    <path d="M110,18 L192,48 L192,138 C192,190 152,231 110,250 C68,231 28,190 28,138 L28,48 Z" fill="white" opacity="0.10"/>
-    <!-- Red swoosh in shield -->
-    <path d="M28,120 L192,90 L192,108 L28,140 Z" fill="url(#swooshGradSq)" opacity="0.95"/>
-    <!-- White M -->
-    <text x="110" y="185" font-family="Arial Black, Arial, sans-serif" font-size="90" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-4">M</text>
+  <!-- Top red accent bar -->
+  <rect x="0" y="0" width="500" height="7" rx="56" fill="#CC1F35"/>
+  <rect x="0" y="0" width="500" height="7" fill="#CC1F35" rx="0"/>
+  <rect x="0" y="0" width="500" height="7" rx="56" fill="#CC1F35"/>
+
+  <!-- Shield — centered, large, in 0-100/0-115 space scaled ~2.2 and centered -->
+  <!-- Scaled 2.2x: shield becomes 220px wide, 253px tall; centered at x=140, y=70 -->
+  <g transform="translate(140, 55) scale(2.2)">
+    <path d="M50,3 L97,17 L97,63 C97,91 77,108 50,118 C23,108 3,91 3,63 L3,17 Z"
+          fill="url(#sq-shield)"/>
+    <path d="M50,8 L92,21 L92,63 C92,88 74,103 50,112 C26,103 8,88 8,63 L8,21 Z"
+          fill="none" stroke="#ffffff" stroke-width="0.6" stroke-opacity="0.18"/>
+    <path d="M50,8 L92,21 L92,48 C78,28 50,20 8,36 L8,21 Z"
+          fill="url(#sq-highlight)"/>
+    <path d="M3,57 L97,41 L97,54 L3,70 Z"
+          fill="url(#sq-swoosh)"/>
+    <path d="M18,108 L18,65 L29,65 L50,89 L71,65 L82,65 L82,108 L73,108 L73,78 L51,97 L49,97 L27,78 L27,108 Z"
+          fill="#ffffff"/>
   </g>
 
-  <!-- MEDSWIFT text -->
-  <text x="250" y="355" font-family="Arial Black, Arial, sans-serif" font-size="52" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-2">
-    <tspan fill="white">MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  <!-- "MEDSWIFT" wordmark centered below shield -->
+  <!-- Shield bottom is at y=55 + 118*2.2 = 55+259.6 = ~315; add gap -->
+  <text x="250" y="373"
+        font-family="'Arial Black','Arial Bold',Arial,sans-serif"
+        font-size="58" font-weight="900" letter-spacing="-2"
+        text-anchor="middle">
+    <tspan fill="#ffffff">MED</tspan><tspan fill="#FF3D52">SWIFT</tspan>
   </text>
 
   <!-- EXPRESS -->
-  <text x="250" y="393" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="white" text-anchor="middle" letter-spacing="10" opacity="0.9">EXPRESS</text>
+  <text x="250" y="408"
+        font-family="'Arial Black','Arial Bold',Arial,sans-serif"
+        font-size="17" font-weight="900" letter-spacing="10"
+        fill="#ffffff" text-anchor="middle" opacity="0.82">EXPRESS</text>
 
   <!-- Red underline -->
-  <rect x="180" y="400" width="140" height="3" fill="#CC1F35" rx="1.5"/>
+  <rect x="192" y="418" width="116" height="3" rx="1.5" fill="#CC1F35"/>
 
-  <!-- Tagline -->
-  <text x="250" y="435" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="white" text-anchor="middle" letter-spacing="2" opacity="0.7">ATLANTA, GA</text>
+  <!-- Bottom red accent bar -->
+  <rect x="0" y="493" width="500" height="7" rx="56" fill="#CC1F35"/>
+  <rect x="0" y="493" width="500" height="7" fill="#CC1F35" rx="0"/>
+  <rect x="0" y="493" width="500" height="7" rx="56" fill="#CC1F35"/>
 </svg>

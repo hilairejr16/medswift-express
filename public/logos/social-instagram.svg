@@ -1,43 +1,43 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="MEDSWIFT EXPRESS Instagram Profile Logo">
   <defs>
-    <radialGradient id="igBg" cx="30%" cy="100%" r="120%">
-      <stop offset="0%" style="stop-color:#FEDA77"/>
-      <stop offset="30%" style="stop-color:#F58529"/>
-      <stop offset="60%" style="stop-color:#DD2A7B"/>
-      <stop offset="85%" style="stop-color:#8134AF"/>
-      <stop offset="100%" style="stop-color:#515BD4"/>
+    <radialGradient id="ig-bg" cx="30%" cy="100%" r="130%">
+      <stop offset="0%" stop-color="#FEDA77"/>
+      <stop offset="28%" stop-color="#F58529"/>
+      <stop offset="55%" stop-color="#DD2A7B"/>
+      <stop offset="80%" stop-color="#8134AF"/>
+      <stop offset="100%" stop-color="#515BD4"/>
     </radialGradient>
-    <linearGradient id="igShield" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1B3C6E"/>
-      <stop offset="100%" style="stop-color:#2563EB"/>
+    <linearGradient id="ig-shield" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e4d8c" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#1B3C6E" stop-opacity="0.9"/>
     </linearGradient>
-    <linearGradient id="igSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#CC1F35"/>
-      <stop offset="100%" style="stop-color:#9B1827"/>
+    <linearGradient id="ig-swoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC1F35"/>
+      <stop offset="100%" stop-color="#A01828"/>
+    </linearGradient>
+    <linearGradient id="ig-hl" x1="0%" y1="0%" x2="0%" y2="70%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <!-- Instagram gradient background -->
-  <rect width="500" height="500" rx="110" fill="url(#igBg)"/>
+  <rect width="500" height="500" rx="110" fill="url(#ig-bg)"/>
 
-  <!-- Shield icon centered -->
-  <g transform="translate(138, 60)">
-    <path d="M112,18 L210,52 L210,158 C210,214 166,258 112,278 C58,258 14,214 14,158 L14,52 Z" fill="white" opacity="0.18"/>
-    <path d="M112,18 L210,52 L210,158 C210,214 166,258 112,278 C58,258 14,214 14,158 L14,52 Z" fill="none" stroke="white" stroke-width="2.5"/>
-    <!-- Swoosh -->
-    <path d="M14,138 L210,106 L210,122 L14,156 Z" fill="url(#igSwoosh)" opacity="0.95"/>
-    <!-- M lettermark -->
-    <text x="112" y="214" font-family="Arial Black, Arial, sans-serif" font-size="88" font-weight="900" fill="white" text-anchor="middle">M</text>
+  <!-- White card behind shield for contrast -->
+  <rect x="130" y="44" width="240" height="280" rx="20" fill="#ffffff" fill-opacity="0.12"/>
+
+  <g transform="translate(140, 52) scale(2.2)">
+    <path d="M50,3 L97,17 L97,63 C97,91 77,108 50,118 C23,108 3,91 3,63 L3,17 Z" fill="url(#ig-shield)"/>
+    <path d="M50,8 L92,21 L92,63 C92,88 74,103 50,112 C26,103 8,88 8,63 L8,21 Z" fill="none" stroke="#fff" stroke-width="0.8" stroke-opacity="0.3"/>
+    <path d="M50,8 L92,21 L92,48 C78,28 50,20 8,36 L8,21 Z" fill="url(#ig-hl)"/>
+    <path d="M3,57 L97,41 L97,54 L3,70 Z" fill="url(#ig-swoosh)"/>
+    <path d="M18,108 L18,65 L29,65 L50,89 L71,65 L82,65 L82,108 L73,108 L73,78 L51,97 L49,97 L27,78 L27,108 Z" fill="#ffffff"/>
   </g>
 
-  <!-- MEDSWIFT -->
-  <text x="250" y="365" font-family="Arial Black, Arial, sans-serif" font-size="48" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-2">
-    <tspan>MED</tspan><tspan fill="#FFD6DC">SWIFT</tspan>
+  <text x="250" y="373" font-family="'Arial Black','Arial Bold',Arial,sans-serif" font-size="58" font-weight="900" letter-spacing="-2" text-anchor="middle">
+    <tspan fill="#ffffff">MED</tspan><tspan fill="#FFE0E4">SWIFT</tspan>
   </text>
-  <!-- EXPRESS -->
-  <text x="250" y="400" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="white" text-anchor="middle" letter-spacing="8" opacity="0.9">EXPRESS</text>
-  <!-- Underline -->
-  <rect x="185" y="408" width="130" height="2.5" fill="white" opacity="0.6" rx="1.5"/>
-  <!-- Tagline -->
-  <text x="250" y="438" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.75" letter-spacing="1">ATLANTA, GA · MEDICAL COURIER</text>
+  <text x="250" y="408" font-family="'Arial Black','Arial Bold',Arial,sans-serif" font-size="17" font-weight="900" letter-spacing="10" fill="#ffffff" text-anchor="middle" opacity="0.88">EXPRESS</text>
+  <rect x="192" y="418" width="116" height="3" rx="1.5" fill="#ffffff" opacity="0.7"/>
 </svg>

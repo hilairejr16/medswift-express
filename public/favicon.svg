@@ -1,15 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 115" width="100" height="115">
   <defs>
-    <linearGradient id="fav1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1B3C6E" />
-      <stop offset="100%" style="stop-color:#2563EB" />
+    <linearGradient id="fv-shield" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#1e4d8c"/>
+      <stop offset="100%" stop-color="#1B3C6E"/>
     </linearGradient>
-    <linearGradient id="fav2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#CC1F35" />
-      <stop offset="100%" style="stop-color:#9B1827" />
+    <linearGradient id="fv-swoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#CC1F35"/>
+      <stop offset="100%" stop-color="#A01828"/>
     </linearGradient>
   </defs>
-  <path d="M50,4 L92,18 L92,56 C92,79 73,97 50,106 C27,97 8,79 8,56 L8,18 Z" fill="url(#fav1)"/>
-  <path d="M8,48 L92,33 L92,44 L8,60 Z" fill="url(#fav2)" opacity="0.95"/>
-  <text x="50" y="78" font-family="Arial Black, Arial, sans-serif" font-size="36" font-weight="900" fill="white" text-anchor="middle">M</text>
+  <path d="M50,3 L97,17 L97,63 C97,91 77,108 50,118 C23,108 3,91 3,63 L3,17 Z" fill="url(#fv-shield)"/>
+  <path d="M50,8 L92,21 L92,63 C92,88 74,103 50,112 C26,103 8,88 8,63 L8,21 Z" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.15"/>
+  <path d="M3,57 L97,41 L97,54 L3,70 Z" fill="url(#fv-swoosh)"/>
+  <path d="M18,108 L18,65 L29,65 L50,89 L71,65 L82,65 L82,108 L73,108 L73,78 L51,97 L49,97 L27,78 L27,108 Z" fill="#ffffff"/>
 </svg>
