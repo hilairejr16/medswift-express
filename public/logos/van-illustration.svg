@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 340" width="720" height="340" role="img" aria-label="MEDSWIFT EXPRESS Delivery Van">
+  <defs>
+    <linearGradient id="vanBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="100%" style="stop-color:#F1F5F9"/>
+    </linearGradient>
+    <linearGradient id="vanRoof" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#E2E8F0"/>
+      <stop offset="100%" style="stop-color:#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="stripeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35"/>
+      <stop offset="100%" style="stop-color:#9B1827"/>
+    </linearGradient>
+    <linearGradient id="cabGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e4a85"/>
+      <stop offset="100%" style="stop-color:#1B3C6E"/>
+    </linearGradient>
+    <linearGradient id="wheelGrad" cx="50%" cy="50%" r="50%" fx="50%" fy="50%" id="wheelG" gradientUnits="objectBoundingBox">
+      <stop offset="0%" style="stop-color:#475569"/>
+      <stop offset="100%" style="stop-color:#1E293B"/>
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#1B3C6E" flood-opacity="0.18"/>
+    </filter>
+    <radialGradient id="wheelRG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#64748B"/>
+      <stop offset="70%" style="stop-color:#334155"/>
+      <stop offset="100%" style="stop-color:#1E293B"/>
+    </radialGradient>
+    <radialGradient id="hubRG" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#CBD5E1"/>
+      <stop offset="100%" style="stop-color:#94A3B8"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Ground shadow -->
+  <ellipse cx="380" cy="322" rx="300" ry="14" fill="#1B3C6E" opacity="0.10"/>
+
+  <!-- ===== VAN BODY GROUP ===== -->
+  <g filter="url(#shadow)">
+
+    <!-- Rear cargo box -->
+    <rect x="130" y="95" width="430" height="200" rx="10" fill="url(#vanBody)" stroke="#CBD5E1" stroke-width="1.5"/>
+
+    <!-- Roof curve / top of cargo -->
+    <rect x="130" y="95" width="430" height="30" rx="10" fill="url(#vanRoof)"/>
+    <rect x="130" y="110" width="430" height="15" fill="url(#vanRoof)"/>
+
+    <!-- Red racing stripe across full van -->
+    <rect x="130" y="185" width="490" height="28" fill="url(#stripeGrad)"/>
+
+    <!-- Navy bottom skirt -->
+    <rect x="130" y="265" width="430" height="30" rx="0" fill="#1B3C6E"/>
+    <rect x="130" y="275" width="430" height="20" rx="0" fill="#1B3C6E"/>
+
+    <!-- MEDSWIFT EXPRESS lettering on cargo side -->
+    <text x="345" y="168" font-family="Arial Black, Arial, sans-serif" font-size="22" font-weight="900" fill="#1B3C6E" text-anchor="middle" letter-spacing="-0.5">
+      <tspan fill="#1B3C6E">MED</tspan><tspan fill="#CC1F35">SWIFT</tspan>
+    </text>
+    <text x="345" y="186" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="700" fill="#1B3C6E" text-anchor="middle" letter-spacing="5">EXPRESS</text>
+
+    <!-- Medical cross on cargo side -->
+    <g transform="translate(488, 128)">
+      <rect x="-6" y="-18" width="12" height="36" rx="3" fill="#CC1F35" opacity="0.85"/>
+      <rect x="-18" y="-6" width="36" height="12" rx="3" fill="#CC1F35" opacity="0.85"/>
+    </g>
+
+    <!-- Rear door line -->
+    <line x1="540" y1="100" x2="540" y2="265" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="6,4"/>
+    <!-- Door handle -->
+    <rect x="543" y="178" width="14" height="5" rx="2.5" fill="#94A3B8"/>
+
+    <!-- Cargo side windows (small vents) -->
+    <rect x="150" y="108" width="60" height="22" rx="5" fill="#BFDBFE" opacity="0.5" stroke="#93C5FD" stroke-width="1"/>
+    <rect x="225" y="108" width="60" height="22" rx="5" fill="#BFDBFE" opacity="0.5" stroke="#93C5FD" stroke-width="1"/>
+
+    <!-- ===== CAB (front) ===== -->
+    <!-- Cab body -->
+    <path d="M560,125 Q595,125 618,145 L645,185 L645,265 L560,265 Z" fill="url(#cabGrad)"/>
+    <!-- Cab roof join -->
+    <path d="M540,95 L560,95 Q595,95 618,118 L640,145 L645,185 L540,185 Z" fill="url(#cabGrad)"/>
+    <!-- Windshield -->
+    <path d="M560,105 Q588,105 608,128 L628,160 L540,160 L540,108 Z" fill="#BFDBFE" opacity="0.7" stroke="#93C5FD" stroke-width="1.5"/>
+    <!-- Windshield glare -->
+    <path d="M562,108 Q582,108 598,126 L556,126 Z" fill="white" opacity="0.35"/>
+    <!-- Side window (cab) -->
+    <path d="M540,165 L628,165 L628,185 L540,185 Z" fill="#BFDBFE" opacity="0.5" stroke="#93C5FD" stroke-width="1"/>
+    <!-- Door panel -->
+    <path d="M540,190 L645,190 L645,265 L540,265 Z" fill="#1e4a85"/>
+    <!-- Door handle cab -->
+    <rect x="600" y="228" width="18" height="5" rx="2.5" fill="#93C5FD"/>
+    <!-- Headlight -->
+    <ellipse cx="642" cy="225" rx="10" ry="14" fill="#FEF9C3" stroke="#FDE68A" stroke-width="1.5"/>
+    <ellipse cx="642" cy="225" rx="6" ry="9" fill="#FEF08A" opacity="0.6"/>
+    <!-- Side mirror -->
+    <rect x="648" y="160" width="16" height="10" rx="3" fill="#475569"/>
+    <line x1="645" y1="165" x2="648" y2="165" stroke="#475569" stroke-width="2"/>
+    <!-- Front bumper -->
+    <rect x="636" y="258" width="30" height="12" rx="4" fill="#334155"/>
+    <!-- Grille -->
+    <rect x="638" y="238" width="26" height="16" rx="3" fill="#1E293B"/>
+    <line x1="644" y1="238" x2="644" y2="254" stroke="#475569" stroke-width="1.5"/>
+    <line x1="651" y1="238" x2="651" y2="254" stroke="#475569" stroke-width="1.5"/>
+    <line x1="658" y1="238" x2="658" y2="254" stroke="#475569" stroke-width="1.5"/>
+    <!-- Logo badge on grille -->
+    <rect x="646" y="243" width="12" height="8" rx="2" fill="#CC1F35"/>
+    <text x="652" y="249" font-family="Arial Black" font-size="5" fill="white" text-anchor="middle" font-weight="900">M</text>
+
+    <!-- ===== REAR bumper ===== -->
+    <rect x="100" y="258" width="34" height="12" rx="4" fill="#334155"/>
+    <!-- Rear lights -->
+    <rect x="104" y="238" width="20" height="22" rx="3" fill="#FCA5A5" stroke="#EF4444" stroke-width="1"/>
+    <rect x="107" y="241" width="14" height="8" rx="2" fill="#EF4444" opacity="0.8"/>
+    <!-- Rear reflector -->
+    <rect x="107" y="252" width="14" height="5" rx="1.5" fill="#FDE68A" opacity="0.9"/>
+  </g>
+
+  <!-- ===== WHEELS ===== -->
+  <!-- Rear wheel -->
+  <circle cx="220" cy="290" r="46" fill="#1E293B"/>
+  <circle cx="220" cy="290" r="38" fill="url(#wheelRG)"/>
+  <circle cx="220" cy="290" r="20" fill="url(#hubRG)"/>
+  <circle cx="220" cy="290" r="8" fill="#1E293B"/>
+  <!-- Spoke lines rear -->
+  <line x1="220" y1="252" x2="220" y2="270" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="220" y1="310" x2="220" y2="328" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="182" y1="290" x2="200" y2="290" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="240" y1="290" x2="258" y2="290" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="193" y1="263" x2="206" y2="276" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="234" y1="304" x2="247" y2="317" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="247" y1="263" x2="234" y2="276" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="206" y1="304" x2="193" y2="317" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tire -->
+  <circle cx="220" cy="290" r="46" fill="none" stroke="#0F172A" stroke-width="12"/>
+
+  <!-- Front wheel -->
+  <circle cx="580" cy="290" r="46" fill="#1E293B"/>
+  <circle cx="580" cy="290" r="38" fill="url(#wheelRG)"/>
+  <circle cx="580" cy="290" r="20" fill="url(#hubRG)"/>
+  <circle cx="580" cy="290" r="8" fill="#1E293B"/>
+  <!-- Spokes front -->
+  <line x1="580" y1="252" x2="580" y2="270" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="580" y1="310" x2="580" y2="328" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="542" y1="290" x2="560" y2="290" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="600" y1="290" x2="618" y2="290" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="553" y1="263" x2="566" y2="276" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="594" y1="304" x2="607" y2="317" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="607" y1="263" x2="594" y2="276" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <line x1="566" y1="304" x2="553" y2="317" stroke="#94A3B8" stroke-width="3" stroke-linecap="round"/>
+  <!-- Tire front -->
+  <circle cx="580" cy="290" r="46" fill="none" stroke="#0F172A" stroke-width="12"/>
+
+  <!-- Speed lines (motion effect) -->
+  <line x1="40" y1="195" x2="108" y2="195" stroke="#CC1F35" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <line x1="20" y1="207" x2="108" y2="207" stroke="#1B3C6E" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="55" y1="219" x2="108" y2="219" stroke="#CC1F35" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <line x1="30" y1="231" x2="108" y2="231" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500" role="img" aria-label="MEDSWIFT EXPRESS LinkedIn Profile Logo">
+  <defs>
+    <linearGradient id="liTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1B3C6E"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+    <linearGradient id="liSwoosh" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#CC1F35"/>
+      <stop offset="100%" style="stop-color:#9B1827"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LinkedIn blue-to-navy background -->
+  <rect width="500" height="500" rx="0" fill="url(#liTop)"/>
+
+  <!-- White left accent bar (LinkedIn style) -->
+  <rect x="0" y="0" width="14" height="500" fill="white" opacity="0.1"/>
+  <!-- Red right accent bar -->
+  <rect x="486" y="0" width="14" height="500" fill="url(#liSwoosh)"/>
+  <!-- Red bottom bar -->
+  <rect x="0" y="480" width="500" height="20" fill="url(#liSwoosh)"/>
+
+  <!-- Shield icon centered -->
+  <g transform="translate(138, 52)">
+    <path d="M112,18 L210,52 L210,158 C210,214 166,258 112,278 C58,258 14,214 14,158 L14,52 Z" fill="white" opacity="0.13"/>
+    <path d="M112,18 L210,52 L210,158 C210,214 166,258 112,278 C58,258 14,214 14,158 L14,52 Z" fill="none" stroke="white" stroke-width="2.5" opacity="0.5"/>
+    <!-- Swoosh -->
+    <path d="M14,138 L210,106 L210,122 L14,156 Z" fill="url(#liSwoosh)" opacity="0.95"/>
+    <!-- M lettermark -->
+    <text x="112" y="214" font-family="Arial Black, Arial, sans-serif" font-size="88" font-weight="900" fill="white" text-anchor="middle">M</text>
+  </g>
+
+  <!-- MEDSWIFT -->
+  <text x="250" y="368" font-family="Arial Black, Arial, sans-serif" font-size="50" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-2">
+    <tspan>MED</tspan><tspan fill="#FF4D65">SWIFT</tspan>
+  </text>
+  <!-- EXPRESS -->
+  <text x="250" y="404" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" fill="white" text-anchor="middle" letter-spacing="8" opacity="0.9">EXPRESS</text>
+  <!-- Underline -->
+  <rect x="185" y="412" width="130" height="3" fill="#CC1F35" rx="1.5"/>
+  <!-- Tagline -->
+  <text x="250" y="445" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="white" text-anchor="middle" opacity="0.65" letter-spacing="1">ATLANTA, GA · MEDICAL COURIER</text>
+</svg>
