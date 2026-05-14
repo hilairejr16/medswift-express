@@ -65,53 +65,13 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Professional Fleet card (logo + van/driver + banner) */}
+            {/* Right — Logo only */}
             <div className="hidden lg:flex justify-center items-center">
-              <div className="relative w-full max-w-md">
-
-                {/* Glow behind card */}
-                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl scale-110" />
-
-                {/* Card */}
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
-
-                  {/* ── Logo strip (white bg) ── */}
-                  <div className="bg-white px-8 py-5 flex justify-center items-center">
-                    <img
-                      src="/logos/logo-horizontal.svg"
-                      alt="MEDSWIFT EXPRESS logo"
-                      className="h-14 w-auto"
-                    />
-                  </div>
-
-                  {/* ── Van + Driver photo ── */}
-                  <div className="relative">
-                    <img
-                      src="/medswift-brand.jpg"
-                      alt="MedSwift Courier — branded van and professional driver"
-                      className="w-full object-cover"
-                      style={{ maxHeight: "260px", objectPosition: "center center" }}
-                    />
-                    {/* Subtle gradient overlay at bottom of photo */}
-                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#1B3C6E]/60 to-transparent" />
-                  </div>
-
-                  {/* ── Blue "Professional Fleet & Team" banner ── */}
-                  <div className="bg-[#1B3C6E] px-5 py-3.5 flex items-center gap-3">
-                    <span className="text-xl flex-shrink-0">🚐</span>
-                    <div>
-                      <p className="text-white font-black text-sm leading-tight">Professional Fleet &amp; Team</p>
-                      <p className="text-blue-200 text-xs mt-0.5">Serving Atlanta, GA Metro Area</p>
-                    </div>
-                    {/* Live dot -->  */}
-                    <div className="ml-auto flex items-center gap-1.5">
-                      <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse" />
-                      <span className="text-blue-200 text-xs font-medium">Active</span>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
+              <img
+                src="/logos/logo-white.svg"
+                alt="MEDSWIFT EXPRESS logo"
+                className="w-full max-w-sm drop-shadow-2xl"
+              />
             </div>
 
           </div>

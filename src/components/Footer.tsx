@@ -77,20 +77,10 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4">
               <img
-                src="/medswift-brand.jpg"
-                alt="MedSwift Courier"
-                className="h-10 w-auto object-contain brightness-0 invert"
-                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = "none"; }}
+                src="/logos/logo-white.svg"
+                alt="MEDSWIFT EXPRESS"
+                className="h-12 w-auto"
               />
-              <div className="flex items-center gap-2">
-                <div className="w-9 h-9 bg-white rounded-xl flex items-center justify-center">
-                  <span className="text-brand-navy text-base font-black">M</span>
-                </div>
-                <div>
-                  <div className="font-black text-sm leading-tight">MED<span className="text-brand-red">SWIFT</span></div>
-                  <div className="text-slate-400 text-[10px] tracking-widest uppercase">COURIER</div>
-                </div>
-              </div>
             </Link>
 
             <p className="text-slate-400 text-sm leading-relaxed mb-5 max-w-xs">
