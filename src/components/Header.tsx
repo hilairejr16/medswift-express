@@ -22,8 +22,6 @@ export default function Header() {
   const navLinks = [
     { href: "/", label: tx.nav.home },
     { href: "/about/", label: tx.nav.about },
-    { href: "/services/", label: tx.nav.services },
-    { href: "/how-it-works/", label: tx.nav.howItWorks },
     { href: "/contact/", label: tx.nav.contact },
   ];
 
@@ -100,10 +98,10 @@ export default function Header() {
 
             {/* CTA */}
             <Link
-              href="/quote/"
-              className="hidden md:inline-flex items-center gap-1.5 btn-primary text-sm px-4 py-2"
+              href="/contact/"
+              className="hidden md:inline-flex items-center gap-1.5 btn-red text-sm px-4 py-2"
             >
-              {tx.nav.cta} →
+              {tx.nav.contact} →
             </Link>
 
             {/* Mobile hamburger */}
@@ -156,8 +154,8 @@ export default function Header() {
             </Link>
           ))}
           <div className="mt-3 pt-3 border-t border-slate-100 flex items-center gap-3">
-            <Link href="/quote/" className="btn-primary flex-1 justify-center text-sm py-2.5">
-              {tx.nav.cta} →
+            <Link href="/contact/" className="btn-red flex-1 justify-center text-sm py-2.5">
+              {tx.nav.contact} →
             </Link>
             <button
               onClick={toggle}

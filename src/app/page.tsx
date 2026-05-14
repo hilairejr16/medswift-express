@@ -42,11 +42,11 @@ export default function HomePage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/quote/" className="btn-red text-base px-7 py-3.5">
-                  {tx.hero.cta1} →
+                <Link href="/contact/" className="btn-red text-base px-7 py-3.5">
+                  {tx.nav.contact} →
                 </Link>
-                <Link href="/how-it-works/" className="btn-outline-white text-base px-7 py-3.5">
-                  {tx.hero.cta2}
+                <Link href="/about/" className="btn-outline-white text-base px-7 py-3.5">
+                  {tx.nav.about}
                 </Link>
               </div>
 
@@ -106,73 +106,6 @@ export default function HomePage() {
                 <span>{item.label}</span>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── Services Overview ─────────────────────────────── */}
-      <section className="py-20 bg-slate-50">
-        <div className="container-lg">
-          <div className="text-center mb-12">
-            <span className="section-badge">{tx.servicesSection.badge}</span>
-            <h2 className="section-title mb-4">{tx.servicesSection.title}</h2>
-            <p className="section-sub mx-auto">{tx.servicesSection.sub}</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {tx.services.map((svc, i) => (
-              <div key={svc.title} className="card group relative overflow-hidden">
-                {/* Red top accent bar on first card */}
-                {i === 0 && (
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-brand-red rounded-t-2xl" />
-                )}
-                <div className="text-3xl mb-3">{svc.icon}</div>
-                <h3 className="font-bold text-brand-navy text-lg mb-2 group-hover:text-brand-red transition-colors">
-                  {svc.title}
-                </h3>
-                <p className="text-slate-500 text-sm leading-relaxed">{svc.desc}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Link href="/services/" className="btn-secondary">
-              View All Services →
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* ── How It Works Teaser ───────────────────────────── */}
-      <section className="py-20 bg-white">
-        <div className="container-lg">
-          <div className="text-center mb-14">
-            <span className="section-badge">{tx.howSection.badge}</span>
-            <h2 className="section-title mb-4">{tx.howSection.title}</h2>
-            <p className="section-sub mx-auto">{tx.howSection.sub}</p>
-          </div>
-
-          <div className="relative">
-            {/* Connecting line (desktop) */}
-            <div className="hidden md:block absolute top-8 left-[12.5%] right-[12.5%] h-0.5 bg-gradient-to-r from-white via-brand-red to-white" />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
-              {tx.steps.map((step, i) => (
-                <div key={step.number} className="relative flex flex-col items-center text-center">
-                  <div className={`relative z-10 w-16 h-16 rounded-2xl flex items-center justify-center mb-4 shadow-lg ${i === 0 || i === 2 ? "bg-brand-red" : "bg-brand-navy"}`}>
-                    <span className="text-white font-black text-xl">{step.number}</span>
-                  </div>
-                  <h3 className="font-bold text-brand-navy text-base mb-2">{step.title}</h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <div className="text-center mt-12">
-            <Link href="/how-it-works/" className="btn-secondary">
-              See Full Process →
-            </Link>
           </div>
         </div>
       </section>
@@ -271,8 +204,8 @@ export default function HomePage() {
             {tx.ctaBanner.sub}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote/" className="btn-red text-base px-8 py-3.5">
-              {tx.ctaBanner.btn} →
+            <Link href="/contact/" className="btn-red text-base px-8 py-3.5">
+              {tx.nav.contact} →
             </Link>
             <a href="tel:7579408468" className="btn-outline-white text-base px-8 py-3.5">
               📞 (757) 940-8468

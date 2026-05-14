@@ -88,18 +88,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Prompt for quote */}
+              {/* Call prompt */}
               <div className="bg-brand-navy text-white rounded-2xl p-6">
-                <div className="text-3xl mb-3">💡</div>
-                <h3 className="font-bold text-lg mb-2">Need a delivery quote?</h3>
+                <div className="text-3xl mb-3">📞</div>
+                <h3 className="font-bold text-lg mb-2">Prefer to call us?</h3>
                 <p className="text-blue-200 text-sm mb-4 leading-relaxed">
-                  Use our dedicated quote request form to give us the details we need to set up your service quickly.
+                  For urgent or same-day requests, call us directly and we&apos;ll get you set up right away.
                 </p>
                 <a
-                  href="/quote/"
+                  href="tel:7579408468"
                   className="inline-flex items-center gap-2 bg-brand-red text-white text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-brand-redmid transition-colors"
                 >
-                  {tx.nav.quote} →
+                  📞 (757) 940-8468
                 </a>
               </div>
             </div>

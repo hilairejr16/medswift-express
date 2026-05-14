@@ -117,12 +117,12 @@ export default function AboutPage() {
             Tell us about your delivery needs and we&apos;ll put together a solution that works for your pharmacy or healthcare practice.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/quote/" className="btn-red text-base px-7 py-3.5 bg-white !text-brand-red hover:!bg-slate-100">
-              {tx.nav.quote} →
+            <Link href="/contact/" className="btn-red text-base px-7 py-3.5 bg-white !text-brand-red hover:!bg-slate-100">
+              {tx.nav.contact} →
             </Link>
-            <Link href="/contact/" className="btn-outline-white text-base px-7 py-3.5">
-              {tx.nav.contact}
-            </Link>
+            <a href="tel:7579408468" className="btn-outline-white text-base px-7 py-3.5">
+              📞 (757) 940-8468
+            </a>
           </div>
         </div>
       </section>

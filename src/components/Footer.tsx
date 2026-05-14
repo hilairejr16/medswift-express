@@ -48,9 +48,6 @@ export default function Footer() {
   const mainLinks = [
     { href: "/", label: tx.nav.home },
     { href: "/about/", label: tx.nav.about },
-    { href: "/services/", label: tx.nav.services },
-    { href: "/how-it-works/", label: tx.nav.howItWorks },
-    { href: "/quote/", label: tx.nav.quote },
     { href: "/contact/", label: tx.nav.contact },
   ];
 
@@ -202,13 +199,13 @@ export default function Footer() {
 
             <div className="mt-8 p-4 bg-white/5 rounded-2xl border border-white/10">
               <p className="text-slate-300 text-xs mb-3 leading-relaxed">
-                Ready to streamline your pharmacy deliveries?
+                Ready to get started with MEDSWIFT EXPRESS?
               </p>
               <Link
-                href="/quote/"
+                href="/contact/"
                 className="inline-flex items-center gap-1.5 bg-brand-red text-white text-xs font-semibold px-4 py-2.5 rounded-lg hover:bg-brand-redmid transition-colors w-full justify-center"
               >
-                {tx.nav.cta} →
+                {tx.nav.contact} →
               </Link>
             </div>
           </div>
