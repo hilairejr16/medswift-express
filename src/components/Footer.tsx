@@ -51,19 +51,6 @@ export default function Footer() {
     { href: "/contact/", label: tx.nav.contact },
   ];
 
-  const companyLinks = [
-    { href: "/faq/", label: "FAQs" },
-    { href: "/blog/", label: "Blog" },
-    { href: "/careers/", label: "Careers" },
-    { href: "/legal/", label: "Legal" },
-  ];
-
-  const legalLinks = [
-    { href: "/privacy-policy/", label: "Privacy Policy" },
-    { href: "/terms-of-use/", label: "Terms of Use" },
-    { href: "/cookie-policy/", label: "Cookie Policy" },
-    { href: "/disclaimer/", label: "Disclaimer" },
-  ];
 
   return (
     <footer className="bg-brand-navy text-white">
@@ -71,7 +58,7 @@ export default function Footer() {
       <div className="h-1 bg-gradient-to-r from-brand-red via-red-400 to-brand-red" />
 
       <div className="container-lg py-14">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
 
           {/* ── Column 1: Brand + Social ── */}
           <div className="lg:col-span-1">
@@ -133,28 +120,12 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* ── Column 3: Company ── */}
+          {/* ── Column 3: Contact + CTA ── */}
           <div>
             <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-400 mb-4">
-              Company
-            </h3>
-            <ul className="space-y-2.5">
-              {companyLinks.map(({ href, label }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-slate-300 hover:text-white text-sm transition-colors duration-150"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-400 mb-4 mt-8">
               {tx.footer.contact}
             </h3>
-            <ul className="space-y-2 text-sm text-slate-400">
+            <ul className="space-y-2 text-sm text-slate-400 mb-8">
               <li>
                 <a href="tel:7579408468" className="hover:text-white transition-colors">
                   📞 (757) 940-8468
@@ -167,27 +138,8 @@ export default function Footer() {
               </li>
               <li className="text-slate-500">🕐 Mon–Fri 8am–6pm · Sat 9am–2pm</li>
             </ul>
-          </div>
 
-          {/* ── Column 4: Legal + CTA ── */}
-          <div>
-            <h3 className="font-semibold text-xs uppercase tracking-wider text-slate-400 mb-4">
-              Legal
-            </h3>
-            <ul className="space-y-2.5">
-              {legalLinks.map(({ href, label }) => (
-                <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-slate-300 hover:text-white text-sm transition-colors duration-150"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <div className="mt-8 p-4 bg-white/5 rounded-2xl border border-white/10">
+            <div className="p-4 bg-white/5 rounded-2xl border border-white/10">
               <p className="text-slate-300 text-xs mb-3 leading-relaxed">
                 Ready to get started with MEDSWIFT EXPRESS?
               </p>
@@ -207,15 +159,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container-lg py-5 flex flex-col sm:flex-row justify-between items-center gap-3">
           <p className="text-slate-500 text-xs">{tx.footer.legal}</p>
-          <div className="flex items-center gap-4">
-            <Link href="/privacy-policy/" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Privacy</Link>
-            <span className="text-slate-700">·</span>
-            <Link href="/terms-of-use/" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Terms</Link>
-            <span className="text-slate-700">·</span>
-            <Link href="/cookie-policy/" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Cookies</Link>
-            <span className="text-slate-700">·</span>
-            <Link href="/sitemap.xml" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Sitemap</Link>
-          </div>
+          <Link href="/sitemap.xml" className="text-slate-500 hover:text-slate-300 text-xs transition-colors">Sitemap</Link>
         </div>
       </div>
     </footer>
