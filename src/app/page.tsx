@@ -65,13 +65,48 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right — Logo only */}
-            <div className="hidden lg:flex justify-center items-center">
+            {/* Right — Fleet card + logo below */}
+            <div className="hidden lg:flex flex-col justify-center items-center gap-6">
+
+              {/* Fleet card */}
+              <div className="relative w-full max-w-md">
+                <div className="absolute inset-0 bg-white/10 rounded-3xl blur-2xl scale-110" />
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-white/20">
+
+                  {/* Van + Driver photo */}
+                  <div className="relative">
+                    <img
+                      src="/medswift-brand.jpg"
+                      alt="MedSwift Courier — branded van and professional driver"
+                      className="w-full object-cover"
+                      style={{ maxHeight: "260px", objectPosition: "center center" }}
+                    />
+                    <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[#1B3C6E]/60 to-transparent" />
+                  </div>
+
+                  {/* Banner */}
+                  <div className="bg-[#1B3C6E] px-5 py-3.5 flex items-center gap-3">
+                    <span className="text-xl flex-shrink-0">🚐</span>
+                    <div>
+                      <p className="text-white font-black text-sm leading-tight">Professional Fleet &amp; Team</p>
+                      <p className="text-blue-200 text-xs mt-0.5">Serving Atlanta, GA Metro Area</p>
+                    </div>
+                    <div className="ml-auto flex items-center gap-1.5">
+                      <span className="w-2 h-2 bg-brand-red rounded-full animate-pulse" />
+                      <span className="text-blue-200 text-xs font-medium">Active</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              {/* Logo below the card */}
               <img
                 src="/logos/logo-white.svg"
                 alt="MEDSWIFT EXPRESS logo"
-                className="w-full max-w-sm drop-shadow-2xl"
+                className="w-full max-w-xs drop-shadow-2xl"
               />
+
             </div>
 
           </div>
