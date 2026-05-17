@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
 
 export const metadata: Metadata = {
@@ -83,8 +82,7 @@ export default function RootLayout({
         <LanguageProvider>
           <Header />
           <main>{children}</main>
-          <Footer />
-          <CookieBanner />
+<CookieBanner />
         </LanguageProvider>
       </body>
     </html>
